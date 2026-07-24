@@ -1,0 +1,45 @@
+[[menus.main]]
+name = "Home"
+pageRef = "/"
+weight = 10
+
+[[menus.main]]
+name = "Research"
+pageRef = "research"
+weight = 20
+
+[[menus.main]]
+name = "About"
+pageRef = "about"
+weight = 30
+
+[[menus.footer]]
+name = "GitHub"
+pageRef = "github"
+url = "https://github.com/HappyKarhu"
+weight = 10
+
+[menus.footer.params]
+icon = "github"
+showName = true
+target = "_blank"
+
+[[menus.footer]]
+name = "LinkedIn"
+pageRef = "linkedin"
+url = "https://www.linkedin.com/in/mojca-jan-581919220/"
+weight = 20
+
+[menus.footer.params]
+icon = "linkedin"
+showName = true
+target = "_blank"
+
+[[menus.footer]]
+name = "Privacy"
+pageRef = "privacy"
+weight = 30
+
+[menus.footer.params]
+icon = "lock"
+showName = true

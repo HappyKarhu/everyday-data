@@ -1,0 +1,3 @@
+scenario,brushing_time_sec,flow_rate_lpm,frequency_per_day,brushing_time_min,water_per_brush_l,water_per_day_l,water_per_year_l
+Recommended brushing,120,6,2,2.0,12.0,24.0,8760.0
+Average brushing,87,6,2,1.45,8.7,17.4,6350.999999999999

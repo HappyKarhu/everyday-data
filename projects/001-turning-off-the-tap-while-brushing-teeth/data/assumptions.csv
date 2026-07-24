@@ -1,0 +1,6 @@
+variable,value,unit,source,description
+recommended_brushing_time,120,s,OH-002,Recommended brushing time
+average_brushing_time,87,s,OH-001,Average manual brushing time
+powered_brushing_time,143,s,OH-001,Average powered brushing time
+faucet_flow_rate,6,L/min,WA-003,Selected faucet flow rate
+brushing_frequency,2,per_day,OH-002,Recommended brushing frequency
