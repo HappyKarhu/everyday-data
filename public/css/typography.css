@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--ed-text);
+    background-color: var(--ed-background);
+}
+
+h1 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+p {
+    line-height: 1.75;
+}

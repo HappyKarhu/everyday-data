@@ -1,0 +1,30 @@
+/* Congo theme overrides */
+
+header {
+    background-color: var(--ed-primary);
+}
+
+.ed-hero {
+    padding: 5rem 0;
+}
+
+.ed-title {
+    color: var(--ed-primary);
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.ed-slogan {
+    font-size: 1.5rem;
+    color: var(--ed-muted);
+    margin: 0.5rem 0 0;
+}
+
+.ed-principle {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--ed-primary);
+}

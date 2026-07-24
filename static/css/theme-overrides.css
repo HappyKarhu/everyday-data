@@ -1,0 +1,5 @@
+/* Congo theme overrides */
+
+header {
+    background-color: var(--ed-primary);
+}

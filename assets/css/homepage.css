@@ -1,0 +1,26 @@
+.ed-hero {
+    padding: 5rem 0 3rem;
+}
+
+.ed-title {
+    color: var(--ed-primary);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+}
+
+.ed-slogan {
+    font-size: 1.45rem;
+    color: var(--ed-muted);
+    margin: 0 0 1rem;
+    max-width: 700px;
+}
+
+.ed-principle {
+    margin-top: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ed-primary);
+    line-height: 1.6;
+}

@@ -1,0 +1,6 @@
+.ed-card {
+    background: var(--ed-card);
+    border: 1px solid var(--ed-border);
+    border-radius: 16px;
+    padding: 2rem;
+}

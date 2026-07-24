@@ -1,0 +1,20 @@
+
+
+:root {
+    /* Everyday Data foundation */
+    --ed-background: #FAFBFC;
+    --ed-card: #FFFFFF;
+
+    /* Brand */
+    --ed-primary: #0F766E;      /* teal */
+    --ed-blue: #2563EB;         /* data, links, charts */
+    --ed-accent: #10B981;       /* positive results */
+
+    /* Highlight */
+    --ed-orange: #F59E0B;       /* important findings only */
+
+    /* Text */
+    --ed-text: #111827;
+    --ed-muted: #6B7280;
+    --ed-border: #E5E7EB;
+}
