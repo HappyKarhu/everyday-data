@@ -1,0 +1,57 @@
+:root {
+  /* --- Core Page Background --- 
+     Warm, muted oatmeal tones reduce eye strain and glare in dark/evening settings. */
+  --background-fallback: #EFECE6;
+  --background: linear-gradient(
+    135deg,
+    #EFECE6 0%,
+    #E7E4DD 45%,
+    #E2DFD7 100%
+  );
+  --ed-bg: var(--background);
+
+  /* --- Cards & Surfaces --- 
+     Off-white ivory tones keep cards distinct from the background without harsh glare. */
+  --ed-card: #F7F5F0;
+  --ed-card-hover: #FCFBF9;
+
+  /* --- Primary Brand Color (Logo / Emerald) --- 
+     Headings, logo, primary icons, key elements. */
+  --primary: #0F766E;
+  --primary-hover: #0D655E;
+
+  /* --- Secondary / Action Color (Logo / Amber) --- 
+     Buttons, links, hover states, badges, CTA elements. */
+  --action: #F59E0B;
+  --action-hover: #D97706;
+
+  /* --- Status & Indicator Badges --- 
+     Used sparingly for verification, sources, and highlights. */
+  --success: #059669;
+  --success-bg: rgba(5, 150, 105, 0.12);
+
+  --info: #2563EB;
+  --info-bg: rgba(37, 99, 235, 0.10);
+
+  /* --- Typography & Structural Borders --- 
+     Soft charcoal text and warm borders for low-contrast readability. */
+  --text-main: #242E35;       /* Primary body text */
+  --text-muted: #5C6B73;      /* Secondary text, captions, metadata */
+  --border: #D5D0C7;          /* Card and divider borders */
+
+  /* --- Navigation Bar --- */
+  --nav-bg: rgba(239, 236, 230, 0.90); 
+  --nav-border: #D5D0C7;
+
+  /* --- Elevation & Shadows --- */
+  --card-radius: 20px;
+  --card-shadow: 0 10px 30px rgba(24, 43, 40, 0.06);
+
+  /* --- Data Visualization / Matplotlib Palette --- 
+     Consistent palette for python scripts and inline charts. */
+  --chart-primary: #0F766E;   /* Primary metric (Emerald) */
+  --chart-amber: #F59E0B;     /* Accent metric (Amber) */
+  --chart-coral: #C95535;     /* Warm contrast metric */
+  --chart-blue: #2563EB;      /* Secondary comparison */
+  --chart-grey: #828E99;      /* Baseline / Context data */
+}
