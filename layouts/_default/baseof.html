@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Language.Lang | default "en" }}">
 <head>
-    <title>{{ .Title }}</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  <!-- Hugo CSS Pipeline -->
+  {{ $css := resources.Get "css/main.css" | resources.Minify }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 </head>
 <body>
 
-{{ block "main" . }}
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="{{ "/" | relURL }}" class="brand-logo">
+        Everyday Data<span class="dot">•</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{{ "/" | relURL }}">Home</a></li>
+          <li><a href="{{ "/projects" | relURL }}">Projects</a></li>
+          <li><a href="{{ "/library" | relURL }}">Library</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-{{ end }}
+  <!-- Main Content Block -->
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ now.Format "2006" }} Everyday Data. Transparent research & analysis.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -1,6 +1,97 @@
-@import "variables.css";
+/* ==========================================================
+   EVERYDAY DATA
+   Main stylesheet
+   ----------------------------------------------------------
+   Table of contents
 
-/* Base Resets & Global Styles */
+   1. CSS Variables
+   2. Base Reset & Global Styles
+   3. Layout
+   4. Typography
+   5. Header & Navigation
+   6. Hero
+   7. Buttons
+   8. Badges 
+   9. Cards
+   10. Grid
+   11. Homepage Sections
+   12. Footer
+   13. Utilities
+   14. Responsive Design
+   15. Logo
+   16. Forms
+   17. Article Page
+   18. Tables
+   19. Code blocks
+   20. Charts
+========================================================== */
+
+/* ==========================================================
+   1. CSS VARIABLES
+========================================================== */
+
+:root {
+  /* --- Core Page Background --- 
+     Warm, muted oatmeal tones reduce eye strain and glare in dark/evening settings. */
+  --background-fallback: #EFECE6;
+  --background: linear-gradient(
+    135deg,
+    #EFECE6 0%,
+    #E7E4DD 45%,
+    #E2DFD7 100%
+  );
+  --ed-bg: var(--background);
+
+  /* --- Cards & Surfaces --- 
+     Off-white ivory tones keep cards distinct from the background without harsh glare. */
+  --ed-card: #F7F5F0;
+  --ed-card-hover: #FCFBF9;
+
+  /* --- Primary Brand Color (Logo / Emerald) --- 
+     Headings, logo, primary icons, key elements. */
+  --primary: #0F766E;
+  --primary-hover: #0D655E;
+
+  /* --- Secondary / Action Color (Logo / Amber) --- 
+     Buttons, links, hover states, badges, CTA elements. */
+  --action: #F59E0B;
+  --action-hover: #D97706;
+
+  /* --- Status & Indicator Badges --- 
+     Used sparingly for verification, sources, and highlights. */
+  --success: #059669;
+  --success-bg: rgba(5, 150, 105, 0.12);
+
+  --info: #2563EB;
+  --info-bg: rgba(37, 99, 235, 0.10);
+
+  /* --- Typography & Structural Borders --- 
+     Soft charcoal text and warm borders for low-contrast readability. */
+  --text-main: #242E35;       /* Primary body text */
+  --text-muted: #5C6B73;      /* Secondary text, captions, metadata */
+  --border: #D5D0C7;          /* Card and divider borders */
+
+  /* --- Navigation Bar --- */
+  --nav-bg: rgba(239, 236, 230, 0.90); 
+  --nav-border: #D5D0C7;
+
+  /* --- Elevation & Shadows --- */
+  --card-radius: 20px;
+  --card-shadow: 0 10px 30px rgba(24, 43, 40, 0.06);
+
+  /* --- Data Visualization / Matplotlib Palette --- 
+     Consistent palette for python scripts and inline charts. */
+  --chart-primary: #0F766E;   /* Primary metric (Emerald) */
+  --chart-amber: #F59E0B;     /* Accent metric (Amber) */
+  --chart-coral: #C95535;     /* Warm contrast metric */
+  --chart-blue: #2563EB;      /* Secondary comparison */
+  --chart-grey: #828E99;      /* Baseline / Context data */
+}
+
+/* ==========================================================
+   2. BASE RESET & GLOBAL STYLES
+========================================================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +109,10 @@ body {
   flex-direction: column;
 }
 
-/* Layout Container */
+/* ==========================================================
+   3. LAYOUT
+========================================================== */
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -26,7 +120,43 @@ body {
   width: 100%;
 }
 
-/* Header & Navigation */
+main {
+  flex: 1;
+}
+
+/* ==========================================================
+   4. TYPOGRAPHY
+========================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================================================
+   5. HEADER & NAVIGATION
+========================================================== */
+
 .site-header {
   background: var(--nav-bg);
   backdrop-filter: blur(8px);
@@ -75,7 +205,10 @@ body {
   color: var(--primary);
 }
 
-/* Hero Section */
+/* ==========================================================
+   6. HERO
+========================================================== */
+
 .hero {
   padding: 60px 0 40px;
   text-align: center;
@@ -95,7 +228,14 @@ body {
   margin: 0 auto 24px;
 }
 
-/* Badge Component */
+/* ==========================================================
+   7. BUTTONS
+========================================================== */
+
+/* ==========================================================
+   8. BADGES
+========================================================== */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -108,19 +248,10 @@ body {
   margin-bottom: 16px;
 }
 
-/* Grid & Cards Section */
-.section-title {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin: 40px 0 20px;
-}
+/* ==========================================================
+   9. CARDS
+========================================================== */
 
-.articles-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
-  margin-bottom: 60px;
-}
 
 .card {
   background: var(--ed-card);
@@ -173,7 +304,31 @@ body {
   justify-content: space-between;
 }
 
-/* Site Footer */
+/* ==========================================================
+  10. GRID
+========================================================== */
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+/* ==========================================================
+   11. HOMEPAGE SECTIONS
+========================================================== */
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 40px 0 20px;
+}
+
+/* ==========================================================
+   12. FOOTER
+========================================================== */
+
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--border);
@@ -182,3 +337,47 @@ body {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+
+/* ==========================================================
+   13. UTILITIES
+========================================================== */
+
+/* ==========================================================
+   14. RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+/* ==========================================================
+   15. LOGO
+========================================================== */
+
+/* ==========================================================
+   16. FORMS
+========================================================== */
+
+/* ==========================================================
+   17. ARTICLE PAGE
+========================================================== */
+
+/* ==========================================================
+   18. TABLES
+========================================================== */
+
+/* ==========================================================
+   19. CODE BLOCKS
+========================================================== */
+
+/* ==========================================================
+   20. CHARTS
+========================================================== */
