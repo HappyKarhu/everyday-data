@@ -31,19 +31,11 @@
 ========================================================== */
 
 :root {
-  /* --- Core Page Background --- 
-     Warm, muted oatmeal tones reduce eye strain and glare in dark/evening settings. */
-  --background-fallback: #EFECE6;
-  --background: linear-gradient(
-    135deg,
-    #EFECE6 0%,
-    #E7E4DD 45%,
-    #E2DFD7 100%
-  );
-  --ed-bg: var(--background);
+  /* --- Core Page Background ---  */
+  --background-fallback: #E5E0D6;
+  --ed-bg: #E5E0D6;
 
-  /* --- Cards & Surfaces --- 
-     Off-white ivory tones keep cards distinct from the background without harsh glare. */
+  /* --- Cards & Surfaces --- */
   --ed-card: #F7F5F0;
   --ed-card-hover: #FCFBF9;
 
@@ -100,6 +92,7 @@
 
 body {
   background: var(--ed-bg);
+  background-image: url("/images/background.svg");
   background-attachment: fixed;
   color: var(--text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -108,6 +101,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
 /* ==========================================================
    3. LAYOUT
@@ -210,22 +204,22 @@ img {
 ========================================================== */
 
 .hero {
-  padding: 60px 0 40px;
-  text-align: center;
+    padding: 60px 0 40px;
+    text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  color: var(--text-muted);
-  max-width: 640px;
-  margin: 0 auto 24px;
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin: 0 auto 24px;
 }
 
 /* ==========================================================
