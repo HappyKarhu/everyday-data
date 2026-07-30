@@ -32,8 +32,67 @@ Current and future research may include:
 - 🍎 Health and lifestyle
 - 📊 Public statistics
 
+## Repository Structure
+
+The repository is built with **Hugo**. The project layouts, custom styling, and site structure are defined in the `layouts/` and `assets/` directories, while `content/` holds all written articles and project bundles.
+
+```text
+everyday-data/
+├── assets/
+│   └── css/
+│       └── main.css       # Custom styling
+├── content/
+│   ├── _index.md          # Homepage content/metadata
+│   ├── about.md           # About Everyday Data
+│   └── research/
+│       ├── _index.md      # Research section metadata
+│       └── turning-off-the-tap/
+│           ├── index.md   # Project article
+│           ├── cover.jpg
+│           └── graph1.png
+├── layouts/
+│   ├── index.html         # Homepage layout template
+│   ├── partials
+│       ├── footer.html
+│       └── header.html
+│   └── _default/
+│       ├── baseof.html    # Main HTML structure
+│       └── single.html    # Default single page layout
+├── static/
+│   ├── images
+│       ├── background.svg
+│       └── logo.png
+├── hugo.toml              # Hugo site configuration
+├── AGENTS.md              # Guidelines & context for AI assistants
+└── README.md              # Project documentation
+```
+
+Website structure
+
+```
+Home
+├── Featured Research
+├── Latest Research
+├── Why Everyday Data?
+└── Explore all research
+
+Research
+├── Environment
+├── Health
+├── Everyday Habits
+├── Public Statistics
+└── All projects
+
+About
+├── Why Everyday Data?
+├── Research methodology
+├── Tools
+└── Contact
+```
+
 ## Tools
 
+- Hugo(Static Site Generator)
 - Python
 - Pandas
 - Power BI
@@ -46,6 +105,16 @@ Current and future research may include:
 **What is the environmental impact of turning off the tap while brushing your teeth for one year?**
 
 *Status: In progress*
+
+## Research Principles
+
+Every research project aims to be:
+
+- Evidence-based
+- Transparent
+- Reproducible
+- Easy to understand
+- Built from publicly available data whenever possible
 
 ## Purpose
 

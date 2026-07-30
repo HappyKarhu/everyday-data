@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="none">
+  <rect width="1440" height="900" fill="#E5E0D6"/>
+
+  <!-- Wave 1 -->
+  <path 
+    d="M0,570 
+       C300,460 560,570 860,510 
+       C1120,460 1300,530 1440,600 
+       L1440,900 L0,900 Z" 
+    fill="#C8C4BC" 
+    opacity="0.30"
+  />
+
+
+  <!-- Wave 2 -->
+  <path 
+    d="M0,640 
+       C280,720 520,530 800,630 
+       C1020,710 1280,520 1440,690 
+       L1440,900 L0,900 Z" 
+    fill="#C8C4BC" 
+    opacity="0.55"
+  />
+
+
+  <!-- Wave 3 -->
+  <path 
+    d="M0,700 
+       C320,650 640,770 960,690 
+       C1200,630 1340,710 1440,680 
+       L1440,900 L0,900 Z" 
+    fill="#BEB9B0" 
+    opacity="0.75"
+  />
+</svg>

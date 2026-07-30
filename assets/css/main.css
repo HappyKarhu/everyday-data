@@ -1,0 +1,614 @@
+/* ==========================================================
+   EVERYDAY DATA
+   Main stylesheet
+   ----------------------------------------------------------
+   Table of contents
+
+   1. CSS Variables
+   2. Base Reset & Global Styles
+   3. Layout
+   4. Typography
+   5. Header & Navigation
+   6. Hero
+   7. Buttons
+   8. Badges 
+   9. Cards
+   10. Grid
+   11. Homepage Sections
+   12. Footer
+   13. Utilities
+   14. Responsive Design
+   15. Logo
+   16. Forms
+   17. Article Page
+   18. Tables
+   19. Code blocks
+   20. Charts
+========================================================== */
+
+/* ==========================================================
+   1. CSS VARIABLES
+========================================================== */
+
+:root {
+  /* --- Core Page Background ---  */
+  --background-fallback: #E5E0D6;
+  --ed-bg: #E5E0D6;
+
+  /* --- Surface & Wave Grays --- */
+  --ed-wave-far: #C8C4BC;   /* Cool light gray for distant waves */
+  --ed-wave-near: #BEB9B0;  /* Cool medium gray for foreground waves */
+
+  /* --- Cards & Surfaces --- */
+  --ed-card: #F7F5F0;
+  --ed-card-hover: #FCFBF9;
+
+  /* --- Primary Brand Color (Logo / Emerald) --- 
+     Headings, logo, primary icons, key elements. */
+  --primary: #0F766E;
+  --primary-hover: #0D655E;
+
+  /* --- Secondary / Action Color (Logo / Amber) --- 
+     Buttons, links, hover states, badges, CTA elements. */
+  --action: #F59E0B;
+  --action-hover: #D97706;
+
+  /* --- Status & Indicator Badges --- 
+     Used sparingly for verification, sources, and highlights. */
+  --success: #059669;
+  --success-bg: rgba(5, 150, 105, 0.12);
+
+  --info: #2563EB;
+  --info-bg: rgba(37, 99, 235, 0.10);
+
+  /* --- Typography & Structural Borders --- */
+  --text-main: #242E35;       /* Primary body text */
+  --text-muted: #5C6B73;      /* Secondary text, captions, metadata */
+  --border: #D5D0C7;          /* Card and divider borders */
+
+  /* --- Navigation Bar --- */
+  --nav-bg: rgba(239, 236, 230, 0.90); 
+  --nav-border: #D5D0C7;
+
+  /* --- Elevation & Shadows --- */
+  --card-radius: 20px;
+  --card-shadow: 0 10px 30px rgba(24, 43, 40, 0.06);
+
+  /* --- Data Visualization / Matplotlib Palette --- 
+     Consistent palette for python scripts and inline charts. */
+  --chart-primary: #0F766E;   /* Primary metric (Emerald) */
+  --chart-amber: #F59E0B;     /* Accent metric (Amber) */
+  --chart-coral: #C95535;     /* Warm contrast metric */
+  --chart-blue: #2563EB;      /* Secondary comparison */
+  --chart-grey: #828E99;      /* Baseline / Context data */
+}
+
+/* ==========================================================
+   2. BASE RESET & GLOBAL STYLES
+========================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Added background-color to html to eliminate dark-mode loading flash */
+html {
+  background-color: #E5E0D6;
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ed-bg);
+  background-image: url("/images/background.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ==========================================================
+   3. LAYOUT
+========================================================== */
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+main {
+  flex: 1;
+}
+
+/* ==========================================================
+   4. TYPOGRAPHY
+========================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ==========================================================
+   5. HEADER & NAVIGATION
+========================================================== */
+
+.site-header {
+  background: var(--nav-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--nav-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 16px 0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  padding-bottom: 4px;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+  transform: translateY(-1px) scale(1.05); 
+}
+
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* line under link */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+/* ==========================================================
+   6. HERO
+========================================================== */
+
+.hero {
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    max-width: 640px;
+    margin: 0 auto 24px;
+}
+
+/* ==========================================================
+   7. BUTTONS
+========================================================== */
+
+/* Base button structure */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary Amber Action Button */
+.btn-action {
+  background-color: var(--action);
+  color: #FFFFFF;
+}
+
+.btn-action:hover {
+  background-color: var(--action-hover);
+  transform: translateY(-1px);
+}
+
+/* Primary Emerald Button */
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================
+   8. BADGES
+========================================================== */
+
+/* Pill badge used in hero section */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--success-bg);
+  color: var(--success);
+  margin-bottom: 16px;
+}
+
+/* Dot indicator inside hero badge */
+.badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--success);
+  margin-right: 8px;
+}
+
+/* ==========================================================
+   9. CARDS
+========================================================== */
+
+
+.card {
+  background: var(--ed-card);
+  border: 1px solid var(--border);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  background: var(--ed-card-hover);
+  border-color: var(--primary);
+  box-shadow: 0 16px 36px rgba(24, 43, 40, 0.08);
+}
+
+.card-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--action);
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==========================================================
+  10. GRID
+========================================================== */
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+/* ==========================================================
+   11. HOMEPAGE SECTIONS
+========================================================== */
+
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 40px 0 20px;
+}
+
+/* ==========================================================
+   12. FOOTER
+========================================================== */
+
+.site-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding: 30px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* grid */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.footer-col h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+/* Seznam povezav */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* Newsletter sekcija */
+.footer-newsletter p {
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--ed-card);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--primary);
+}
+
+.newsletter-form .btn {
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+
+/* Social links */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+}
+
+/* Copyright and Privacy */
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-bottom-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary);
+}
+
+/* Mobile addtaptation */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* ==========================================================
+   13. UTILITIES
+========================================================== */
+
+/* ==========================================================
+   14. RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width: 900px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+/* ==========================================================
+   15. LOGO
+========================================================== */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-logo:hover {
+  transform: scale(1.10);
+}
+
+.brand-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* ==========================================================
+   16. FORMS
+========================================================== */
+
+/* ==========================================================
+   17. ARTICLE PAGE
+========================================================== */
+
+/* ==========================================================
+   18. TABLES
+========================================================== */
+
+/* ==========================================================
+   19. CODE BLOCKS
+========================================================== */
+
+/* ==========================================================
+   20. CHARTS
+========================================================== */
