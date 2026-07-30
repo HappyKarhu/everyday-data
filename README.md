@@ -32,6 +32,53 @@ Current and future research may include:
 - 🍎 Health and lifestyle
 - 📊 Public statistics
 
+## Repository Structure
+
+The repository is organized around individual research projects. Each project lives in its own folder and contains the article, images, calculations, and other supporting files.
+
+The website consists of three main sections:
+
+- Home
+- Research
+- About
+
+```text
+content/
+├── _index.md              # Homepage
+├── about.md               # About Everyday Data
+└── research/
+    ├── _index.md          # Research overview
+    ├── turning-off-the-tap/
+    │   ├── index.md
+    │   ├── cover.jpg
+    │   └── graph1.png
+    ├── dual-flush-toilet/
+    └── reusable-bags/
+```
+
+Website structure
+
+```
+Home
+├── Featured Research
+├── Latest Research
+├── Why Everyday Data?
+└── Explore all research
+
+Research
+├── Environment
+├── Health
+├── Everyday Habits
+├── Public Statistics
+└── All projects
+
+About
+├── Why Everyday Data?
+├── Research methodology
+├── Tools
+└── Contact
+```
+
 ## Tools
 
 - Python
@@ -46,6 +93,16 @@ Current and future research may include:
 **What is the environmental impact of turning off the tap while brushing your teeth for one year?**
 
 *Status: In progress*
+
+## Research Principles
+
+Every research project aims to be:
+
+- Evidence-based
+- Transparent
+- Reproducible
+- Easy to understand
+- Built from publicly available data whenever possible
 
 ## Purpose
 
