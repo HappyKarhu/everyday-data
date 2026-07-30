@@ -14,8 +14,10 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
   <!-- Hugo CSS Pipeline -->
-  {{ $css := resources.Get "css/main.css" | resources.Minify }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{ with resources.Get "css/main.css" }}
+  {{ $secureCSS := . | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $secureCSS.RelPermalink }}" integrity="{{ $secureCSS.Data.Integrity }}">
+{{ end }}
 </head>
 <body>
 
