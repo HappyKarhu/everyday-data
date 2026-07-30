@@ -34,26 +34,30 @@ Current and future research may include:
 
 ## Repository Structure
 
-The repository is organized around individual research projects. Each project lives in its own folder and contains the article, images, calculations, and other supporting files.
-
-The website consists of three main sections:
-
-- Home
-- Research
-- About
+The repository is built with **Hugo**. The project layouts, custom styling, and site structure are defined in the `layouts/` and `assets/` directories, while `content/` holds all written articles and project bundles.
 
 ```text
-content/
-├── _index.md              # Homepage
-├── about.md               # About Everyday Data
-└── research/
-    ├── _index.md          # Research overview
-    ├── turning-off-the-tap/
-    │   ├── index.md
-    │   ├── cover.jpg
-    │   └── graph1.png
-    ├── dual-flush-toilet/
-    └── reusable-bags/
+everyday-data/
+├── assets/
+│   └── css/
+│       └── main.css       # Custom styling
+├── content/
+│   ├── _index.md          # Homepage content/metadata
+│   ├── about.md           # About Everyday Data
+│   └── research/
+│       ├── _index.md      # Research section metadata
+│       └── turning-off-the-tap/
+│           ├── index.md   # Project article
+│           ├── cover.jpg
+│           └── graph1.png
+├── layouts/
+│   ├── index.html         # Homepage layout template
+│   └── _default/
+│       ├── baseof.html    # Main HTML structure
+│       └── single.html    # Default single page layout
+├── hugo.toml              # Hugo site configuration
+├── AGENTS.md              # Guidelines & context for AI assistants
+└── README.md              # Project documentation
 ```
 
 Website structure
@@ -81,6 +85,7 @@ About
 
 ## Tools
 
+- Hugo(Static Site Generator)
 - Python
 - Pandas
 - Power BI

@@ -61,8 +61,7 @@
   --info: #2563EB;
   --info-bg: rgba(37, 99, 235, 0.10);
 
-  /* --- Typography & Structural Borders --- 
-     Soft charcoal text and warm borders for low-contrast readability. */
+  /* --- Typography & Structural Borders --- */
   --text-main: #242E35;       /* Primary body text */
   --text-muted: #5C6B73;      /* Secondary text, captions, metadata */
   --border: #D5D0C7;          /* Card and divider borders */
@@ -181,24 +180,12 @@ img {
   align-items: center;
 }
 
-.brand-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--primary);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.brand-logo .dot {
-  color: var(--action);
-}
-
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -206,11 +193,30 @@ img {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 4px;
+  transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .nav-links a:hover {
   color: var(--primary);
+  transform: translateY(-1px) scale(1.05); 
+}
+
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* line under link */
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
 }
 
 /* ==========================================================
@@ -396,6 +402,155 @@ img {
   color: var(--text-muted);
 }
 
+/* grid */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.footer-col h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+/* Seznam povezav */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* Newsletter sekcija */
+.footer-newsletter p {
+  margin-bottom: 12px;
+  font-size: 0.88rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--ed-card);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: var(--primary);
+}
+
+.newsletter-form .btn {
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+
+/* Social links */
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+}
+
+/* Copyright and Privacy */
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-bottom-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary);
+}
+
+/* Mobile addtaptation */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
 /* ==========================================================
    13. UTILITIES
 ========================================================== */
@@ -419,6 +574,24 @@ img {
 /* ==========================================================
    15. LOGO
 ========================================================== */
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-logo:hover {
+  transform: scale(1.10);
+}
+
+.brand-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
 
 /* ==========================================================
    16. FORMS
