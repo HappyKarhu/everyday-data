@@ -10,7 +10,7 @@
     /* Critical inline background color to prevent flash before CSS loads */
     html { background-color: #E5E0D6; color-scheme: light; }
   </style>
-  
+
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
   <!-- Hugo CSS Pipeline -->
@@ -19,21 +19,8 @@
 </head>
 <body>
 
-  <!-- Navigation Header -->
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="{{ "/" | relURL }}" class="brand-logo">
-        Everyday Data<span class="dot">•</span>
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="{{ "/" | relURL }}">Home</a></li>
-          <li><a href="{{ "/projects" | relURL }}">Projects</a></li>
-          <li><a href="{{ "/library" | relURL }}">Library</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- call for partials/header.html -->
+  {{ partial "header.html" . }}
 
   <!-- Main Content Block -->
   <main class="container">
