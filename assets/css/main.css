@@ -35,6 +35,10 @@
   --background-fallback: #E5E0D6;
   --ed-bg: #E5E0D6;
 
+  /* --- Surface & Wave Grays --- */
+  --ed-wave-far: #C8C4BC;   /* Cool light gray for distant waves */
+  --ed-wave-near: #BEB9B0;  /* Cool medium gray for foreground waves */
+
   /* --- Cards & Surfaces --- */
   --ed-card: #F7F5F0;
   --ed-card-hover: #FCFBF9;
@@ -90,9 +94,19 @@
   padding: 0;
 }
 
+/* Added background-color to html to eliminate dark-mode loading flash */
+html {
+  background-color: #E5E0D6;
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--ed-bg);
   background-image: url("/images/background.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
   background-attachment: fixed;
   color: var(--text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -226,20 +240,69 @@ img {
    7. BUTTONS
 ========================================================== */
 
+/* Base button structure */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Primary Amber Action Button */
+.btn-action {
+  background-color: var(--action);
+  color: #FFFFFF;
+}
+
+.btn-action:hover {
+  background-color: var(--action-hover);
+  transform: translateY(-1px);
+}
+
+/* Primary Emerald Button */
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
 /* ==========================================================
    8. BADGES
 ========================================================== */
 
+/* Pill badge used in hero section */
 .badge {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
+  padding: 6px 14px;
   border-radius: 999px;
   font-size: 0.85rem;
   font-weight: 600;
   background: var(--success-bg);
   color: var(--success);
   margin-bottom: 16px;
+}
+
+/* Dot indicator inside hero badge */
+.badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--success);
+  margin-right: 8px;
 }
 
 /* ==========================================================
@@ -265,6 +328,7 @@ img {
   transform: translateY(-3px);
   background: var(--ed-card-hover);
   border-color: var(--primary);
+  box-shadow: 0 16px 36px rgba(24, 43, 40, 0.08);
 }
 
 .card-tag {

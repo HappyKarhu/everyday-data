@@ -3,6 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Prevents dark-mode/loading white flash & colors mobile browser header -->
+  <meta name="theme-color" content="#E5E0D6">
+  <style>
+    /* Critical inline background color to prevent flash before CSS loads */
+    html { background-color: #E5E0D6; color-scheme: light; }
+  </style>
+  
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
   <!-- Hugo CSS Pipeline -->
