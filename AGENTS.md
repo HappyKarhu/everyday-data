@@ -21,6 +21,32 @@ Every article should explain not only the results, but also how those results we
 - Prioritize content over decoration.
 - Keep pages fast, lightweight, and easy to maintain.
 
+## Website structure
+
+```
+Home
+├── Featured Research
+├── Latest Research
+├── Why Everyday Data?
+└── Explore all research
+
+Research
+├── Environment
+├── Health
+├── Everyday Habits
+├── Public Statistics
+└── All projects
+
+About
+├── Why Everyday Data?
+├── Research methodology
+├── Tools
+└── Contact
+```
+Research articles belong inside `content/research/`.
+
+Images should remain inside the project folder whenever possible.
+
 ## Visual Identity
 
 The visual style should communicate trust, curiosity, and optimism.
@@ -37,6 +63,21 @@ Use whitespace generously, rounded corners, subtle borders, and restrained anima
 
 The visual design should always support the research rather than compete with it.
 
+Primary color:
+Emerald (#0F766E)
+
+Accent color:
+Amber (#F59E0B)
+
+Background:
+Warm light gray (#E5E0D6)
+
+Cards:
+Warm off-white (#F7F5F0)
+
+Avoid bright white backgrounds and high-contrast interfaces.
+
+
 ## Technology
 
 - Hugo
@@ -46,8 +87,8 @@ The visual design should always support the research rather than compete with it
 - Matplotlib
 - Markdown
 - Git
-- Html
-- Css
+- HTML
+- CSS
 
 ## Research methodology
 
@@ -70,6 +111,49 @@ Each project follows the same workflow:
 - `layouts/` – Hugo templates
 - `static/` – images, icons, logos, and downloadable files
 - `data/` – structured data used by Hugo
+
+## Coding Guidelines
+
+When generating code:
+
+- prefer reusable solutions
+- avoid duplication
+- keep CSS modular
+- keep HTML semantic
+- prioritize readability
+- document non-obvious code
+- avoid unnecessary JavaScript
+- preserve the existing project structure
+
+---
+
+## Writing Guidelines
+
+Research articles should:
+
+- begin with a real-world question
+- explain why the topic matters
+- describe the methodology
+- present transparent calculations
+- include charts where appropriate
+- discuss limitations
+- conclude with practical takeaways
+
+Avoid sensationalism or exaggerated claims.
+
+Write in a calm, evidence-based tone.
+
+# Design Consistency
+
+Do not redesign the website unless explicitly requested.
+
+When suggesting code:
+
+- preserve the existing color palette
+- preserve spacing and typography
+- preserve component naming
+- reuse existing CSS variables
+- extend existing layouts instead of replacing them
 
 ## Design philosophy
 
