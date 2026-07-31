@@ -223,13 +223,18 @@ img {
    6. HERO
 ========================================================== */
 
+/* ==========================================================
+   6. HERO
+========================================================== */
+
 .hero {
-    padding: 80px 20px 100px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    padding:80px 20px 210px;
+    text-align: center;
+    background-image: url("../images/hero-waves.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size:100% 240px;
 }
 
 .hero-content {
@@ -264,7 +269,8 @@ img {
 
 @media (max-width: 768px) {
     .hero {
-        padding: 50px 16px 60px;
+        padding: 50px 16px 110px;
+        background-size: 100% 120px;
     }
 
     .hero h1 {
