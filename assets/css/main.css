@@ -427,6 +427,11 @@ img {
     margin-bottom: 20px;
 }
 
+.section-title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0;
+}
 .section-link {
     color: var(--action);
     text-decoration: none;
@@ -480,7 +485,7 @@ img {
 .footer-col h3 {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: var(--primary);
   margin-bottom: 16px;
 }
 
