@@ -102,11 +102,6 @@ html {
 
 body {
   background: var(--ed-bg);
-  background-image: url("../images/background.svg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  background-attachment: fixed;
   color: var(--text-main);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
@@ -229,7 +224,7 @@ img {
 
 .hero {
     position: relative;
-    padding:80px 20px 210px;
+    padding:80px 0 210px;
     text-align: center;
     background-image: url("../images/hero-waves.svg");
     background-repeat: no-repeat;
@@ -423,16 +418,6 @@ img {
    11. HOMEPAGE SECTIONS
 ========================================================== */
 
-.section-title {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin: 40px 0 20px;
-}
-
-/* ==========================================================
-   12. FOOTER
-========================================================== */
-
 .home-content {
   background: var(--ed-bg);
   background-image: url("../images/background.svg");
@@ -442,6 +427,15 @@ img {
   padding: 3rem 0 5rem;
 }
 
+.section-title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 40px 0 20px;
+}
+
+/* ==========================================================
+   12. FOOTER
+========================================================== */
 
 .site-footer {
   margin-top: auto;
