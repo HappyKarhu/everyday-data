@@ -10,7 +10,7 @@
       <ul class="nav-links">
         <li><a href="{{ .Site.Home.RelPermalink }}" class="{{ if .IsHome }}active{{ end }}">Home</a></li>
         <li><a href="{{ "research/" | relURL }}" class="{{ if eq .Section "research" }}active{{ end }}">Research</a></li>
-        <li><a href="{{ "about/" | relURL }}" class="{{ if eq .RelPermalink "/about/" }}active{{ end }}">About</a></li>
+        <li><a href="{{ "about/" | relURL }}" class="{{ if and .IsPage (eq .Title "About") }}active{{ end }}">About</a></li>
       </ul>
     </nav>
   </div>

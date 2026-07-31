@@ -2,7 +2,6 @@
 title: "About"
 ---
 
-# About
 
 🚧 This page is currently under development.
 

@@ -2,7 +2,7 @@
 title: "Research"
 ---
 
-# Research
+
 
 🚧 Research articles are currently in progress.
 
