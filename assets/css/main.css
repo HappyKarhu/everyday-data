@@ -229,7 +229,7 @@ img {
     background-image: url("../images/hero-background.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size:100% 240px;
+    background-size:100% auto;
 }
 
 .hero-content {
