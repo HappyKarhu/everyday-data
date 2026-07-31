@@ -2,46 +2,67 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <span class="badge">Everyday Data</span>
-      <h1>The data behind everyday decisions</h1>
-      <p>
-        Exploring everyday questions through data, research, and transparent analysis.
-      </p>
-      <a href="{{ "research" | relURL }}" class="btn btn-action">Explore research</a>
+    <div class="container">
+      <div class="hero-content">
+          <span class="badge">Everyday Data</span>
+          <h1>The data behind everyday decisions</h1>
+          <p>
+            Exploring everyday questions through data, research, and transparent analysis.
+          </p>
+          <a href="{{ "research" | relURL }}" class="btn btn-action">Explore research</a>
+      </div>
     </div>
   </section>
 
   <!-- Research Articles Grid -->
-  <h2 class="section-title">Recent Research</h2>
-  
-  <div class="articles-grid">
-    {{ range where .Site.RegularPages "Section" "in" (slice "posts" "projects" "content") | first 6 }}
-      <a href="{{ .RelPermalink }}" class="card">
-        <div>
-          <div class="card-tag">{{ .Params.category | default "Research" }}</div>
-          <h2>{{ .Title }}</h2>
-          <p>{{ .Summary | truncate 120 }}</p>
-        </div>
-        <div class="card-footer">
-          <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-          <span>{{ .ReadingTime }} min read</span>
-        </div>
-      </a>
-    {{ else }}
-      <!-- Fallback display when no markdown posts exist yet -->
-      <div class="card">
-        <div>
-          <div class="card-tag">Demo Article</div>
-          <h2>Welcome to Everyday Data</h2>
-          <p>Add Markdown files to your content/ folder to see your research articles automatically appear here.</p>
-        </div>
-        <div class="card-footer">
-          <span>Today</span>
-          <span>1 min read</span>
-        </div>
+  <section class="home-content">
+    <div class="container">
+
+      <h2 class="section-title">Recent Research</h2>
+
+      <div class="articles-grid">
+        {{ range where .Site.RegularPages "Section" "in" (slice "posts" "projects" "content") | first 6 }}
+
+          <a href="{{ .RelPermalink }}" class="card">
+            <div>
+              <div class="card-tag">
+                {{ .Params.category | default "Research" }}
+              </div>
+
+              <h2>{{ .Title }}</h2>
+
+              <p>{{ .Summary | truncate 120 }}</p>
+            </div>
+
+            <div class="card-footer">
+              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+              <span>{{ .ReadingTime }} min read</span>
+            </div>
+          </a>
+
+        {{ else }}
+
+          <div class="card">
+            <div>
+              <div class="card-tag">Demo Article</div>
+
+              <h2>Welcome to Everyday Data</h2>
+
+              <p>
+                Add Markdown files to your content/ folder to see your research articles automatically appear here.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <span>Today</span>
+              <span>1 min read</span>
+            </div>
+          </div>
+
+        {{ end }}
       </div>
-    {{ end }}
-  </div>
+
+    </div>
+  </section>
 
 {{ end }}
