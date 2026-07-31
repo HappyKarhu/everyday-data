@@ -433,6 +433,16 @@ img {
    12. FOOTER
 ========================================================== */
 
+.home-content {
+  background: var(--ed-bg);
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 3rem 0 5rem;
+}
+
+
 .site-footer {
   margin-top: auto;
   border-top: 1px solid var(--border);
