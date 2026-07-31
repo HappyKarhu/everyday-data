@@ -224,22 +224,56 @@ img {
 ========================================================== */
 
 .hero {
-    padding: 60px 0 40px;
+    padding: 80px 20px 100px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 680px;
+    margin: 0 auto;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
+    font-size: 3.25rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
 }
 
 .hero p {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    max-width: 640px;
-    margin: 0 auto 24px;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    opacity: 0.9;
+    max-width: 580px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+.hero .btn-action {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 16px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
 }
 
 /* ==========================================================
