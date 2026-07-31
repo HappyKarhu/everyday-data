@@ -2,13 +2,15 @@
 
 > **The data behind everyday decisions.**
 
+[![Live Site](https://img.shields.io/badge/Live%20Site-Everyday%20Data-0F766E?style=for-the-badge)](https://happykarhu.github.io/everyday-data/)
+
 Welcome to **Everyday Data**.
 
-Everyday Data is a collection of evidence-based research projects exploring everyday questions through official data, scientific research, transparent calculations, and clear visualizations.
+Everyday Data is an independent research project that explores everyday questions using public data, scientific literature, transparent calculations, and clear visualizations.
 
 > **Can one person's everyday choices really make a measurable difference?**
 
-This project investigates common questions using reliable evidence instead of assumptions. The goal is to transform data into clear, practical, and understandable insights.
+The goal is simple: to transform complex data into practical insights that anyone can understand and use in everyday life.
 
 ## What you'll find here
 
@@ -67,7 +69,7 @@ everyday-data/
 └── README.md              # Project documentation
 ```
 
-Website structure
+## Website structure
 
 ```
 Home
@@ -90,17 +92,24 @@ About
 └── Contact
 ```
 
-## Tools
+## Technology
 
-- Hugo(Static Site Generator)
+The website is built with **Hugo** and hosted on **GitHub Pages**.
+
+Research and visualizations are created using:
+
 - Python
 - Pandas
 - Power BI
 - Git & GitHub
-- Excel
 - Markdown
+- HTML & CSS
 
-## First Project
+## 🌐 Website 
+
+Visit the project:
+
+👉 https://happykarhu.github.io/everyday-data/
 
 **What is the environmental impact of turning off the tap while brushing your teeth for one year?**
 
@@ -116,9 +125,15 @@ Every research project aims to be:
 - Easy to understand
 - Built from publicly available data whenever possible
 
-## Purpose
+## Current Research
 
-This repository documents my journey in data analysis while building practical, evidence-based research projects that anyone can understand, verify, and reproduce.
+**What is the environmental impact of turning off the tap while brushing your teeth for one year?**
+
+*Status: In progress*
+
+## Purpose & About the author
+
+This repository also documents my journey in data analysis and web development while building practical, evidence-based research projects that anyone can verify, reproduce, and learn from.
 
 ---
 
