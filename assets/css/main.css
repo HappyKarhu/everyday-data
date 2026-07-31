@@ -24,6 +24,7 @@
    18. Tables
    19. Code blocks
    20. Charts
+   21. Page Content background
 ========================================================== */
 
 /* ==========================================================
@@ -214,9 +215,6 @@ img {
   border-radius: 2px;
 }
 
-/* ==========================================================
-   6. HERO
-========================================================== */
 
 /* ==========================================================
    6. HERO
@@ -419,11 +417,6 @@ img {
 ========================================================== */
 
 .home-content {
-  background: var(--ed-bg);
-  background-image: url("../images/background.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
   padding: 3rem 0 5rem;
 }
 
@@ -656,3 +649,14 @@ img {
 /* ==========================================================
    20. CHARTS
 ========================================================== */
+
+/* ==========================================================
+   21. PAGE CONTENT BACKGROUND
+========================================================== */
+
+.page-content {
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+}

@@ -24,15 +24,16 @@
   <!-- call for partials/header.html -->
   {{ partial "header.html" . }}
 
+  <section class="page-content">
   <!-- Main Content Block -->
   <main>
     {{ block "main" . }}{{ end }}
-
-    <!-- Footer -->
-
-     {{ partial "footer.html" . }}
   </main>
 
+    <!-- Footer -->
+    {{ partial "footer.html" . }}
+
+ </section>
 
 </body>
 </html>
