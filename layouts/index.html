@@ -18,7 +18,13 @@
   <section class="home-content">
     <div class="container">
 
-      <h2 class="section-title">Recent Research</h2>
+      <div class="section-header">
+          <h2 class="section-title">Recent Research</h2>
+
+          <a href="{{ "research/" | relURL }}" class="section-link">
+              View all research →
+          </a>
+      </div>
 
       <div class="articles-grid">
         {{ range where .Site.RegularPages "Section" "in" (slice "posts" "projects" "content") | first 6 }}

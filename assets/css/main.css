@@ -420,10 +420,22 @@ img {
   padding: 1rem 0 5rem;
 }
 
-.section-title {
-  font-size: 1.5rem;
-  color: var(--primary);
-  margin: 0 0 20px;
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-link {
+    color: var(--action);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.section-link:hover {
+    color: var(--primary);
 }
 
 /* ==========================================================
