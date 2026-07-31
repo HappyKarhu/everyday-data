@@ -1,11 +1,25 @@
 # Everyday Data
 
-Everyday Data is an independent research project that explores everyday questions using public data, scientific literature, and transparent analysis.
+Everyday Data is an independent research project that explores everyday questions through public data, scientific literature, transparent calculations, and clear visual communication.
 
-The goal is to transform complex information into clear, practical insights that anyone can understand and use in everyday life.
-The website is built with Hugo.
+The website is built with **Hugo** and published on **GitHub Pages**.
+
+The primary goal is to produce research articles that are accurate, understandable, reproducible, and useful for everyday readers.
 
 Every article should explain not only the results, but also how those results were obtained.
+
+---
+
+## Core principles
+
+- Prioritize clarity over complexity.
+- Use evidence-based reasoning.
+- Explain how conclusions were reached, not only the final result.
+- Keep calculations and assumptions transparent.
+- Avoid sensationalism or exaggerated claims.
+- Write for a general audience, not only for researchers.
+
+---
 
 ## Project principles
 
@@ -14,16 +28,16 @@ Every article should explain not only the results, but also how those results we
 - Support light mode first while avoiding harsh white backgrounds.
 - Create an experience that feels comfortable during both daytime and evening use.
 - Use reusable, maintainable, and well-organized code.
-- Use rounded components and a positive visual style.
 - Favor clarity over unnecessary visual effects.
-- Every design decision should support the content rather than distract from it.
 - Keep the user interface simple and intuitive.
 - Prioritize content over decoration.
 - Keep pages fast, lightweight, and easy to maintain.
 
+---
+
 ## Website structure
 
-```
+```text
 Home
 ├── Featured Research
 ├── Latest Research
@@ -43,40 +57,33 @@ About
 ├── Tools
 └── Contact
 ```
+
 Research articles belong inside `content/research/`.
 
-Images should remain inside the project folder whenever possible.
+Images should remain inside the relevant project folder whenever possible.
 
-## Visual Identity
+---
 
-The visual style should communicate trust, curiosity, and optimism.
+## Design principles
 
-The interface should feel calm and comfortable, encouraging visitors to stay and explore rather than overwhelming them with visual intensity.
+The visual identity should communicate trust, curiosity, and optimism.
 
-The primary brand color is Emerald, complemented by Amber accents inspired by the project logo.
+- Keep the interface clean and lightweight.
+- Favor readability and accessibility.
+- Use generous whitespace and rounded components.
+- Avoid harsh white backgrounds and excessive visual effects.
+- Ensure the design supports the content rather than competing with it.
 
-Prefer soft, muted backgrounds instead of bright white to reduce eye strain, especially during evening reading.
+### Brand colors
 
-Cards should remain slightly lighter than the page background to create gentle depth without relying on strong shadows.
+- Emerald: `#0F766E`
+- Amber: `#F59E0B`
+- Background: `#E5E0D6`
+- Card background: `#F7F5F0`
 
-Use whitespace generously, rounded corners, subtle borders, and restrained animations to keep the interface focused on the content.
+Do not introduce a new color palette unless explicitly requested.
 
-The visual design should always support the research rather than compete with it.
-
-Primary color:
-Emerald (#0F766E)
-
-Accent color:
-Amber (#F59E0B)
-
-Background:
-Warm light gray (#E5E0D6)
-
-Cards:
-Warm off-white (#F7F5F0)
-
-Avoid bright white backgrounds and high-contrast interfaces.
-
+---
 
 ## Technology
 
@@ -90,75 +97,85 @@ Avoid bright white backgrounds and high-contrast interfaces.
 - HTML
 - CSS
 
-## Research methodology
+---
 
-Each project follows the same workflow:
+## Research workflow
 
-1. Define a research question.
-2. Collect data from official, scientific, and other reputable public sources.
-3. Document assumptions transparently.
-4. Analyze data using Python.
-5. Create clear visualizations.
-6. Publish reproducible results.
-7. Cite all data sources whenever possible.
+Each article should:
+
+1. Start with a real-world question.
+2. Explain why the topic matters.
+3. Describe the data sources and methodology.
+4. Document assumptions transparently.
+5. Show calculations clearly.
+6. Analyze data using Python when appropriate.
+7. Include charts where they improve understanding.
+8. Discuss limitations and uncertainty.
+9. Cite reliable sources whenever possible.
+10. End with practical takeaways.
+
+Write in a calm, neutral, evidence-based tone.
+
+---
 
 ## Project structure
 
 - `content/` – pages and research articles
-- `projects/` – research projects 
-- `library/` – research source library 
+- `projects/` – research projects
+- `library/` – research source library
 - `assets/` – CSS, fonts, and theme assets
 - `layouts/` – Hugo templates
 - `static/` – images, icons, logos, and downloadable files
 - `data/` – structured data used by Hugo
 
-## Coding Guidelines
+---
+
+## Coding guidelines
 
 When generating code:
 
-- prefer reusable solutions
-- avoid duplication
-- keep CSS modular
-- keep HTML semantic
-- prioritize readability
-- document non-obvious code
-- avoid unnecessary JavaScript
-- preserve the existing project structure
+- Prefer reusable solutions.
+- Avoid duplication.
+- Keep CSS modular.
+- Keep HTML semantic.
+- Prioritize readability.
+- Document non-obvious code.
+- Avoid unnecessary JavaScript.
+- Preserve the existing project structure.
+- Extend existing components instead of replacing them whenever possible.
 
 ---
 
-## Writing Guidelines
-
-Research articles should:
-
-- begin with a real-world question
-- explain why the topic matters
-- describe the methodology
-- present transparent calculations
-- include charts where appropriate
-- discuss limitations
-- conclude with practical takeaways
-
-Avoid sensationalism or exaggerated claims.
-
-Write in a calm, evidence-based tone.
-
-# Design Consistency
+## Design consistency
 
 Do not redesign the website unless explicitly requested.
 
 When suggesting code:
 
-- preserve the existing color palette
-- preserve spacing and typography
-- preserve component naming
-- reuse existing CSS variables
-- extend existing layouts instead of replacing them
-
-## Design philosophy
+- Preserve the existing color palette.
+- Preserve spacing and typography.
+- Preserve component naming.
+- Reuse existing CSS variables.
+- Extend existing layouts instead of replacing them.
 
 Everyday Data should feel optimistic, trustworthy, and easy to understand.
 
-The website is intended for everyone—not only researchers or data scientists. Complex topics should be explained with clear language, transparent calculations, and simple visualizations.
+The website is intended for everyone—not only researchers or data scientists.
 
-When suggesting code or layouts, prefer reusable, maintainable, and well-documented solutions that fit the existing project structure.
+Complex topics should be explained using clear language, transparent calculations, and simple visualizations.
+
+---
+
+## AI assistant guidelines
+
+Before suggesting code or changes:
+
+- Do not assume files, folders, layouts, templates, or components exist.
+- Do not invent project structure.
+- If you are unsure whether a file, folder, variable, or component exists, ask first.
+- Prefer asking one clarifying question instead of making assumptions.
+- Work with the existing project whenever possible.
+- Modify existing code instead of rewriting large sections unless requested.
+- Keep changes focused and minimal.
+- Explain why a significant change is recommended.
+- If information is missing, explicitly state what you need before generating code.
