@@ -656,6 +656,76 @@ img {
 ========================================================== */
 
 /* ==========================================================
+   17. ARTICLE PAGE
+========================================================== */
+
+.page-single {
+  padding: 4rem 0 6rem;
+}
+
+.page-single .container {
+  max-width: 760px;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  color: var(--primary);
+  font-size: 3.2rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+/* ---------- Markdown ---------- */
+
+.page-body h2 {
+  color: var(--primary);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+
+.page-body h3 {
+  color: var(--text-main);
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+}
+
+.page-body p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.page-body ul,
+.page-body ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.page-body li {
+  margin-bottom: .6rem;
+}
+
+.page-body strong {
+  color: var(--primary);
+}
+
+.page-body blockquote {
+  margin: 2rem 0;
+  padding: 1.2rem 1.5rem;
+  border-left: 4px solid var(--primary);
+  background: rgba(255,255,255,.35);
+  border-radius: 14px;
+}
+
+.page-body hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* ==========================================================
    18. TABLES
 ========================================================== */
 
