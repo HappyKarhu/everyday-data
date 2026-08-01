@@ -47,6 +47,22 @@ The book reminded me how easily our perception of the world can be shaped by ass
 
 It made me think again about the questions that had interested me for years.
 
+## About me
+
+Hi, I'm Mojca.
+
+After living in several countries, Finland feels like home. I like to joke that it has become my final destination — in the best possible sense.
+
+I have always been curious about people. I enjoy meeting people from different cultures, hearing different perspectives, and understanding how people think, make decisions, and experience the world.
+
+I enjoy learning from both data and people. One helps explain patterns, the other provides context—and together they often tell a much more interesting story.
+
+That same curiosity naturally extends to data. Behind every dataset are real people, everyday choices, and stories waiting to be understood.
+
+Everyday Data allows me to combine that curiosity with research, programming, statistics, and visualization while continuously developing my skills.
+
+I build this project entirely in my free time because I genuinely enjoy learning, exploring new ideas, and asking questions that can be answered with evidence rather than assumptions.
+
 **What difference can one person make?**
 
 And perhaps an even more interesting question:
