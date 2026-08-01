@@ -5,7 +5,7 @@ subtitle: "Everyday Data explores that question through research, data, and a ge
 
 ## Can one person really make a difference?
 
-{{< figure src="/images/mojca-about.jpg" alt="Mojca reading Factfulness" class="about-portrait rounded-corners" >}}
+{{< figure src="{{ "images/mojca-about.jpg" | relURL }}" alt="Mojca reading Factfulness" class="about-portrait rounded-corners" >}}
 
 I have often wondered how much difference one person can actually make.
 
