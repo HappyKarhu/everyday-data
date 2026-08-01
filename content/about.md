@@ -1,7 +1,6 @@
 ---
 title: "About Everyday Data"
 subtitle: "Everyday Data explores that question through research, data, and a genuine curiosity about the world around us."
-header_image: "/images/mojca-about.jpg"
 ---
 
 ## Can one person really make a difference?
