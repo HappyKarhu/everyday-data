@@ -1,4 +1,8 @@
-# About Everyday Data
+---
+title: "About Everyday Data"
+subtitle: "Everyday Data explores that question through research, data, and a genuine curiosity about the world around us."
+header_image: "/images/mojca-about.jpg"
+---
 
 ## Can one person really make a difference?
 
@@ -131,5 +135,7 @@ But perhaps the interesting question is not whether one person alone can change 
 **Perhaps it is what happens when many people make small, informed choices — and whether data can help us see the difference.**
 
 That is what I want to explore.
+
+Everyday Data isn't a company or a business. It's simply where my curiosity lives. Every project is an opportunity to learn something new, improve my skills, and hopefully help someone else see everyday questions from a different perspective.
 
 ### Good decisions start with good data.
