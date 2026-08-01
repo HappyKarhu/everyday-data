@@ -144,4 +144,4 @@ That is what I want to explore.
 
 Everyday Data isn't a company or a business. It's simply where my curiosity lives. Every project is an opportunity to learn something new, improve my skills, and hopefully help someone else see everyday questions from a different perspective.
 
-### Good decisions start with good data.
+## Good decisions start with good data.
