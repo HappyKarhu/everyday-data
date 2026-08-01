@@ -63,6 +63,7 @@ everyday-data/
 ├── static/
 │   ├── images
 │       ├── background.svg
+│       ├── mojca-about.jpg
 │       └── logo.png
 ├── hugo.toml              # Hugo site configuration
 ├── AGENTS.md              # Guidelines & context for AI assistants
