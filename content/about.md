@@ -21,6 +21,22 @@ These questions have interested me for a long time. I have often found myself wo
 
 That curiosity is where Everyday Data began.
 
+## About me
+
+Hi, I'm Mojca.
+
+After living in several countries, Finland feels like home. I like to joke that it has become my final destination, in the best possible sense.
+
+I have always been curious about people. I enjoy meeting people from different cultures, hearing different perspectives, and understanding how people think, make decisions, and experience the world.
+
+I enjoy learning from both data and people. One helps explain patterns, the other provides context and together they often tell a much more interesting story.
+
+That same curiosity naturally extends to data. Behind every dataset are real people, everyday choices, and stories waiting to be understood.
+
+Everyday Data allows me to combine that curiosity with research, programming, statistics, and visualization while continuously developing my skills.
+
+I build this project entirely in my free time because I genuinely enjoy learning, exploring new ideas, and asking questions that can be answered with evidence rather than assumptions.
+
 ## Turning curiosity into research
 
 I wanted to move beyond simply wondering... I wanted to know.
@@ -32,8 +48,6 @@ I wanted to move beyond simply wondering... I wanted to know.
 
 Everyday Data is my personal space for exploring those questions.
 
-> **Note:** I analyze data using tools like Python (Pandas) and Power BI, and document the research process transparently so that the calculations and results can be understood and verified.
-
 I use publicly available data, scientific literature, transparent calculations, and visualizations to investigate everyday choices and put them into a context that is easier to understand.
 
 I am particularly interested in the connection between small individual actions and measurable outcomes.
@@ -44,29 +58,15 @@ I think all of those answers are interesting.
 
 The purpose is not to tell people what they should do. It is to understand what our choices actually mean.
 
+> **Note:** I analyze data using tools like Python (Pandas) and Power BI, and document the research process transparently so that the calculations and results can be understood and verified.
+
 ## Why *Factfulness* brought me back to this idea
 
 I have always been interested in questions like these, but reading *Factfulness* by Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund brought this way of thinking back to me in a new way.
 
-The book reminded me how easily our perception of the world can be shaped by assumptions, impressions, and the way information is presented — and how valuable it can be to stop and look at the facts.
+The book reminded me how easily our perception of the world can be shaped by assumptions, impressions, and the way information is presented and how valuable it can be to stop and look at the facts.
 
 It made me think again about the questions that had interested me for years.
-
-## About me
-
-Hi, I'm Mojca.
-
-After living in several countries, Finland feels like home. I like to joke that it has become my final destination — in the best possible sense.
-
-I have always been curious about people. I enjoy meeting people from different cultures, hearing different perspectives, and understanding how people think, make decisions, and experience the world.
-
-I enjoy learning from both data and people. One helps explain patterns, the other provides context—and together they often tell a much more interesting story.
-
-That same curiosity naturally extends to data. Behind every dataset are real people, everyday choices, and stories waiting to be understood.
-
-Everyday Data allows me to combine that curiosity with research, programming, statistics, and visualization while continuously developing my skills.
-
-I build this project entirely in my free time because I genuinely enjoy learning, exploring new ideas, and asking questions that can be answered with evidence rather than assumptions.
 
 **What difference can one person make?**
 
@@ -75,6 +75,10 @@ And perhaps an even more interesting question:
 **Can data help us understand the difference our everyday choices actually make?**
 
 That became one of the main ideas behind Everyday Data.
+
+**What do we think we know? And what does the data actually tell us?**
+
+That question stayed with me.
 
 I do not want to rely only on what feels right or what sounds convincing. I want to investigate the numbers, look at the sources, understand the assumptions, and see where the evidence leads.
 
@@ -121,7 +125,8 @@ The topics may change over time. The common thread is the same:
 
 **Take something ordinary. Ask a question about it. Find the data. Do the research. Show the calculations. And make the result understandable.**
 
-I am not trying to present myself as an expert on every topic I investigate. I am a curious person who enjoys learning, researching, working with data, and finding better ways to understand the world around me.
+I am not trying to present myself as an expert on every topic I investigate. 
+I am a curious person who enjoys learning, researching, working with data, and finding better ways to understand the world around me.
 
 ## Why I am doing this
 
@@ -133,7 +138,7 @@ Maybe one person's choice is only a tiny contribution.
 
 But perhaps the interesting question is not whether one person alone can change everything.
 
-**Perhaps it is what happens when many people make small, informed choices — and whether data can help us see the difference.**
+**Perhaps it is what happens when many people make small, informed choices and whether data can help us see the difference.**
 
 That is what I want to explore.
 
