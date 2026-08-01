@@ -6,6 +6,8 @@ header_image: "/images/mojca-about.jpg"
 
 ## Can one person really make a difference?
 
+{{< figure src="/images/mojca-about.jpg" alt="Mojca reading Factfulness" class="about-portrait rounded-corners" >}}
+
 I have often wondered how much difference one person can actually make.
 
 We make small decisions every day. We choose what we buy, what we use, what we throw away, how much water or energy we consume, and which habits we keep.
