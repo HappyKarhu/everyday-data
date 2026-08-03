@@ -574,16 +574,6 @@ img {
   line-height: 1.4;
 }
 
-#success-message,
-#error-message {
-  display: none !important;
-}
-
-#success-message.sib-form-message-panel--active,
-#error-message.sib-form-message-panel--active {
-  display: block !important;
-}
-
 .newsletter-message--success {
   color: #075a45;
   background: #e5f3ee;
@@ -642,6 +632,12 @@ img {
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer-newsletter.sib-form {
+  background: transparent !important;
+  padding: 0 !important;
+  text-align: left !important;
 }
 
 /* Social links */
