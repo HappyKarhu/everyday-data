@@ -13,9 +13,15 @@ Everyday Data is an independent educational and research project. This website i
 
 ## Information We Collect
 
-This website does not require user accounts and does not intentionally collect personal information from visitors.
+This website does not require user accounts. It does not intentionally collect personal information from visitors unless they voluntarily subscribe to Everyday Data updates.
 
 If you contact me through LinkedIn or GitHub, your information is handled according to the privacy policies of those platforms.
+
+## Newsletter subscriptions
+
+If you choose to subscribe to Everyday Data updates, your email address and subscription consent are collected so that I can send you new research and website updates. The newsletter is managed through Brevo, which processes this information on behalf of Everyday Data.
+
+Subscriptions use a confirmation email (double opt-in). You can unsubscribe at any time using the link in any newsletter. Your email address is kept until you unsubscribe or ask for it to be removed.
 
 ## Cookies
 
