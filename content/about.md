@@ -2,9 +2,24 @@
 title: "About Everyday Data"
 type: "about"
 subtitle: "Everyday Data explores that question through research, data, and a genuine curiosity about the world around us."
-profile_image: "../images/mojca-about.jpg"
+profile_image: "images/mojca-about.jpg"
 profile_alt: "Mojca reading Factfulness"
 profile_title: "About me"
+intro_title: "Can one person really make a difference?"
+intro: |
+  I have often wondered how much difference one person can actually make.
+
+  We make small decisions every day. We choose what we buy, what we use, what we throw away, how much water or energy we consume, and which habits we keep.
+
+  But how much do those choices really matter?
+
+  If one person turns off the tap while brushing their teeth, chooses a reusable or metal straw instead of a plastic one, uses less energy, or changes another small everyday habit, does that choice make a measurable difference?
+
+  And what happens when one person's choice is repeated every day, for a year, or when thousands or millions of people make the same choice?
+
+  These questions have interested me for a long time. I have often found myself wondering whether the small things we do as individuals can actually contribute to something bigger: a cleaner environment, less waste, more responsible use of resources, or simply a better way of living.
+
+  That curiosity is where Everyday Data began.
 profile_intro: |
   Hi, I'm Mojca.
 
@@ -20,22 +35,6 @@ profile_intro: |
 
   I build this project entirely in my free time because I genuinely enjoy learning, exploring new ideas, and asking questions that can be answered with evidence rather than assumptions.
 ---
-
-## Can one person really make a difference?
-
-I have often wondered how much difference one person can actually make.
-
-We make small decisions every day. We choose what we buy, what we use, what we throw away, how much water or energy we consume, and which habits we keep.
-
-But how much do those choices really matter?
-
-If one person turns off the tap while brushing their teeth, chooses a reusable or metal straw instead of a plastic one, uses less energy, or changes another small everyday habit, does that choice make a measurable difference?
-
-And what happens when one person's choice is repeated every day, for a year, or when thousands or millions of people make the same choice?
-
-These questions have interested me for a long time. I have often found myself wondering whether the small things we do as individuals can actually contribute to something bigger: a cleaner environment, less waste, more responsible use of resources, or simply a better way of living.
-
-That curiosity is where Everyday Data began.
 
 ## Turning curiosity into research
 

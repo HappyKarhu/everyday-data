@@ -10,6 +10,11 @@
             {{ end }}
         </header>
 
+        <section class="about-introduction" aria-labelledby="about-introduction-title">
+            <h2 id="about-introduction-title">{{ .Params.intro_title }}</h2>
+            {{ .Params.intro | markdownify }}
+        </section>
+
         <section class="about-profile" aria-labelledby="about-profile-title">
             <div class="about-profile-image">
                 <img src="{{ .Params.profile_image | relURL }}" alt="{{ .Params.profile_alt }}">
