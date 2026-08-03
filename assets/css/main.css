@@ -566,8 +566,9 @@ img {
   color: inherit;
 }
 
-.newsletter-message {
-  display: none !important;
+.newsletter-message 
+sib-form-message-panel{
+  display: none;
   margin: 0 0 12px;
   padding: 10px 12px;
   border-radius: 8px;
@@ -575,6 +576,12 @@ img {
   line-height: 1.4;
 }
 
+/* Force display when Brevo activates the class OR sets inline style */
+.newsletter-message.sib-form-message-panel--active,
+.newsletter-message[style*="display: block"],
+.newsletter-message[style*="display:block"] {
+  display: block !important;
+}
 .newsletter-message.sib-form-message-panel--active {
   display: block !important;
 }
