@@ -992,3 +992,25 @@ img {
     background-position: bottom center;
     background-size: 100% auto;
 }
+
+.input--hidden {
+  display: none !important;
+}
+
+@keyframes newsletter-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.newsletter-form button[disabled] span {
+  display: none;
+}
+
+.newsletter-honeypot {
+  position: absolute;
+  left: -9999px;
+}
