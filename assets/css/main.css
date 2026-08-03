@@ -567,11 +567,16 @@ img {
 }
 
 .newsletter-message {
+  display: none !important;
   margin: 0 0 12px;
   padding: 10px 12px;
   border-radius: 8px;
   font-size: 0.85rem;
   line-height: 1.4;
+}
+
+.newsletter-message.sib-form-message-panel--active {
+  display: block !important;
 }
 
 .newsletter-message--success {
