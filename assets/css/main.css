@@ -566,7 +566,7 @@ img {
   color: inherit;
 }
 
-..newsletter-message {
+.newsletter-message {
   display: none !important;
   margin: 0 0 12px;
   padding: 10px 12px;
