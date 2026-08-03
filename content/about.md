@@ -1,7 +1,8 @@
 ---
 title: "About Everyday Data"
+layout: "about"
 subtitle: "Everyday Data explores that question through research, data, and a genuine curiosity about the world around us."
-profile_image: "/images/mojca-about.jpg"
+profile_image: "../images/mojca-about.jpg"
 profile_alt: "Mojca reading Factfulness"
 profile_title: "About me"
 profile_intro: |
