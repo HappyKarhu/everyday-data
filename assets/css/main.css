@@ -575,15 +575,9 @@ img {
   line-height: 1.4;
 }
 
-
-
-/* Force display when Brevo activates the class OR sets inline style */
-.newsletter-message.sib-form-message-panel--active,
-.newsletter-message[style*="display: block"],
-.newsletter-message[style*="display:block"] {
+.newsletter-message.sib-form-message-panel--active {
   display: block !important;
 }
-
 
 .newsletter-message--success {
   color: #075a45;
