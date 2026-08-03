@@ -621,30 +621,6 @@ img {
   animation: newsletter-spinner 0.8s linear infinite;
 }
 
-/* ==========================================================
-   BREVO FORM STYLES & ANIMATIONS
-========================================================== */
-
-.newsletter-form button[disabled] span {
-  display: none;
-}
-
-.input--hidden,
-.newsletter-honeypot {
-  position: absolute !important;
-  left: -9999px !important;
-  display: none !important;
-}
-
-@keyframes newsletter-spinner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .footer-newsletter.sib-form {
   background: transparent !important;
   padding: 0 !important;
