@@ -767,6 +767,11 @@ img {
   margin-bottom: 4.5rem;
 }
 
+.about-profile-image {
+  /* Align the portrait with the first line of the biography, below its heading. */
+  padding-top: 3.8rem;
+}
+
 .about-profile-image img {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -810,6 +815,7 @@ img {
   .about-profile-image {
     max-width: 330px;
     margin: 0 auto;
+    padding-top: 0;
   }
 
   .about-profile-copy h2 {
