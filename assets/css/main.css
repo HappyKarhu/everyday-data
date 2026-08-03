@@ -561,27 +561,6 @@ img {
   color: inherit;
 }
 
-.newsletter-message {
-  display: none;
-  margin: 0 0 12px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
-
-.newsletter-message--success {
-  color: #075a45;
-  background: #e5f3ee;
-  border: 1px solid var(--primary);
-}
-
-.newsletter-message--error {
-  color: #8a2c1f;
-  background: #fbe9e5;
-  border: 1px solid #b54a38;
-}
-
 .newsletter-honeypot {
   position: absolute;
   left: -9999px;
