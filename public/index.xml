@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Everyday Data on My New Hugo Project</title>
-		<link>http://localhost:1313/</link>
-		<description>Recent content in Everyday Data on My New Hugo Project</description>
+		<title>Everyday Data</title>
+		<link>https://HappyKarhu.github.io/everyday-data/</link>
+		<description>Recent content on Everyday Data</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://HappyKarhu.github.io/everyday-data/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About Everyday Data</title>
+				<link>https://HappyKarhu.github.io/everyday-data/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://HappyKarhu.github.io/everyday-data/about/</guid>
+				<description>&lt;h2 id=&#34;turning-curiosity-into-research&#34;&gt;Turning curiosity into research&lt;/h2&gt;&#xA;&lt;p&gt;I wanted to move beyond simply wondering&amp;hellip; I wanted to know.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;How much water could actually be saved?&lt;/li&gt;&#xA;&lt;li&gt;How much waste could be avoided?&lt;/li&gt;&#xA;&lt;li&gt;What is the environmental impact of a particular everyday choice?&lt;/li&gt;&#xA;&lt;li&gt;What does the data actually tell us?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everyday Data is my personal space for exploring those questions.&lt;/p&gt;&#xA;&lt;p&gt;I use publicly available data, scientific literature, transparent calculations, and visualizations to investigate everyday choices and put them into a context that is easier to understand.&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

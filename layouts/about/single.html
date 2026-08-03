@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<section class="page-single about-page">
+    <div class="container">
+
+        <header class="page-header about-page-header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+                <p>{{ . }}</p>
+            {{ end }}
+        </header>
+
+        <section class="about-profile" aria-labelledby="about-profile-title">
+            <div class="about-profile-image">
+                <img src="{{ .Params.profile_image | relURL }}" alt="{{ .Params.profile_alt }}">
+            </div>
+
+            <div class="about-profile-copy">
+                <h2 id="about-profile-title">{{ .Params.profile_title }}</h2>
+                {{ .Params.profile_intro | markdownify }}
+            </div>
+        </section>
+
+        <article class="page-body about-page-body">
+            {{ .Content }}
+        </article>
+
+    </div>
+</section>
+
+{{ end }}
