@@ -567,7 +567,6 @@ img {
 }
 
 .newsletter-message {
-  display: none;
   margin: 0 0 12px;
   padding: 10px 12px;
   border-radius: 8px;
@@ -575,8 +574,14 @@ img {
   line-height: 1.4;
 }
 
-.newsletter-message.sib-form-message-panel--active {
-  display: block;
+#success-message,
+#error-message {
+  display: none !important;
+}
+
+#success-message.sib-form-message-panel--active,
+#error-message.sib-form-message-panel--active {
+  display: block !important;
 }
 
 .newsletter-message--success {
