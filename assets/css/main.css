@@ -620,17 +620,28 @@ img {
   animation: newsletter-spinner 0.8s linear infinite;
 }
 
+/* ==========================================================
+   BREVO FORM STYLES & ANIMATIONS
+========================================================== */
+
 .newsletter-form button[disabled] span {
   display: none;
 }
 
-@keyframes newsletter-spinner {
-  to { transform: rotate(360deg); }
+.input--hidden,
+.newsletter-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  display: none !important;
 }
 
-.newsletter-honeypot {
-  position: absolute;
-  left: -9999px;
+@keyframes newsletter-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Social links */
@@ -679,7 +690,7 @@ img {
   color: var(--primary);
 }
 
-/* Mobile addtaptation */
+/* Mobile adaptation */
 @media (max-width: 768px) {
   .footer-grid {
     grid-template-columns: 1fr;
