@@ -44,5 +44,22 @@
   </script>
   <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 
+<script>
+  const successMessage = document.getElementById("success-message");
+
+  if (successMessage) {
+    const observer = new MutationObserver(() => {
+      if (getComputedStyle(successMessage).display === "none") {
+        successMessage.style.display = "block";
+      }
+    });
+
+    observer.observe(successMessage, {
+      attributes: true,
+      attributeFilter: ["class", "style"]
+    });
+  }
+</script>
+
 </body>
 </html>
