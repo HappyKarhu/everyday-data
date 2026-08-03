@@ -639,6 +639,10 @@ img {
   align-items: flex-start;
 }
 
+.footer-social {
+  text-align: left;
+}
+
 .social-links a {
   display: inline-flex;
   align-items: center;
