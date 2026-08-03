@@ -6,7 +6,7 @@
       
       <!-- 1 -->
       <div class="footer-brand">
-        <a href="{{ "/" | relURL }}" class="footer-logo">
+        <a href="{{ .Site.Home.RelPermalink }}" class="footer-logo">
           <img src="{{ "images/logo.svg" | relURL }}" alt="Everyday Data Logo" width="32" height="32" onerror="this.style.display='none'">
           <span>Everyday Data</span>
         </a>
@@ -17,9 +17,9 @@
       <div class="footer-col">
         <h3>Navigate</h3>
         <ul class="footer-links">
-          <li><a href="{{ "/" | relURL }}">Home</a></li>
-          <li><a href="{{ "/research/" | relURL }}">Research</a></li>
-          <li><a href="{{ "/about/" | relURL }}">About</a></li>
+          <li><a href="{{ .Site.Home.RelPermalink }}">Home</a></li>
+          <li><a href="{{ "research/" | relURL }}">Research</a></li>
+          <li><a href="{{ "about/" | relURL }}">About</a></li>
         </ul>
       </div>
 
@@ -55,7 +55,7 @@
           </a>
 
           <!-- Privacy -->
-          <a href="{{ "/privacy/" | relURL }}" aria-label="Privacy Policy">
+          <a href="{{ "privacy/" | relURL }}" aria-label="Privacy Policy">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
@@ -70,9 +70,9 @@
     <div class="footer-bottom">
       <p>&copy; {{ now.Format "2006" }} Everyday Data. All rights reserved.</p>
       <div class="footer-bottom-links">
-        <a href="{{ "/privacy/" | relURL }}">Privacy Policy</a>
+        <a href="{{ "privacy/" | relURL }}">Privacy Policy</a>
         <span>•</span>
-        <a href="{{ "/terms/" | relURL }}">Terms</a>
+        <span>Terms coming soon</span>
       </div>
     </div>
 
