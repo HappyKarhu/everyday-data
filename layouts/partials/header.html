@@ -1,8 +1,9 @@
 <header class="site-header">
   <div class="container nav-wrapper">
-    <!-- Logo) -->
-    <a href="{{ .Site.Home.RelPermalink }}" class="brand-logo">
-      <img src="{{ "images/logo.png" | relURL }}" alt="Everyday Data Logo" class="logo-img">
+    <!-- Brand link: both the logo mark and name lead to the homepage. -->
+    <a href="{{ .Site.Home.RelPermalink }}" class="brand-logo" aria-label="Everyday Data home">
+      <img src="{{ "images/logo.png" | relURL }}" alt="" class="logo-mark">
+      <span class="brand-wordmark">Everyday Data</span>
     </a>
 
     <!-- Nav menu -->

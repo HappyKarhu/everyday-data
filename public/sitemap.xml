@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://HappyKarhu.github.io/everyday-data/</loc>
+    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://HappyKarhu.github.io/everyday-data/privacy/</loc>
+    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://HappyKarhu.github.io/everyday-data/research/</loc>
+    <lastmod>2026-07-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://HappyKarhu.github.io/everyday-data/about/</loc>
   </url><url>
     <loc>https://HappyKarhu.github.io/everyday-data/categories/</loc>
-  </url><url>
-    <loc>https://HappyKarhu.github.io/everyday-data/</loc>
-  </url><url>
-    <loc>https://HappyKarhu.github.io/everyday-data/research/</loc>
   </url><url>
     <loc>https://HappyKarhu.github.io/everyday-data/tags/</loc>
   </url>

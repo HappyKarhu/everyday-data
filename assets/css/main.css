@@ -641,10 +641,43 @@ img {
   transform: scale(1.10);
 }
 
-.brand-logo img {
-  height: 50px;
+.brand-logo .logo-mark {
+  height: 44px;
   width: auto;
   display: block;
+}
+
+.brand-wordmark {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .brand-logo {
+    gap: 8px;
+  }
+
+  .brand-logo .logo-mark {
+    height: 36px;
+  }
+
+  .brand-wordmark {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+  }
 }
 
 /* ==========================================================
