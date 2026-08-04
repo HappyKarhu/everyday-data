@@ -1,0 +1,13 @@
+{{ with .Page.Resources.GetMatch "images/glass-250ml.png" }}
+    {{ $glass := . }}
+
+    <div class="glass-test">
+        {{ range seq 48 }}
+            <img class="glass-animation-item" src="{{ $glass.RelPermalink }}" alt="">
+        {{ end }}
+    </div>
+
+    <p class="glass-test-label">
+        48 glasses × 250 ml = 12 litres of water
+    </p>
+{{ end }}

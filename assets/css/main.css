@@ -955,6 +955,23 @@ img {
 }
 
 /* ==========================================================
+   Toothbrushing water visual
+========================================================== */
+
+.glass-animation-item {
+  width: 55px;
+  height: auto;
+}
+
+.glass-test {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+/* ==========================================================
    18. TABLES
 ========================================================== */
 

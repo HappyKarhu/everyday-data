@@ -6,15 +6,16 @@ draft = false
 
 # How Much Water Can One Person Save While Brushing Teeth?
 
+
 We brush our teeth every day. But have you ever wondered how much water flows down the drain while we do it?
 
 It is a small everyday habit, but it gives us a nice opportunity to look at something familiar through data.
 
-And don't worry — this isn't about making you feel guilty for brushing your teeth. Quite the opposite. Let's simply see what the numbers say.
+So, does it actually make a difference? Let's simply see what the numbers say.
 
 ## The question
 
-How much water could one person save by turning off the tap while brushing their teeth?
+How much water could one person save in a year by turning off the tap while brushing their teeth?
 
 To find out, we need just a few pieces of information:
 
@@ -26,7 +27,7 @@ To find out, we need just a few pieces of information:
 
 For this calculation, I use **2 minutes** per brushing because that is the recommended brushing time.
 
-And no, I am definitely **not** suggesting that you brush for less time to save water. 😄
+And no, I am definitely **not** suggesting that you brush for less time to save water. 😄 Your teeth still come first.
 
 Two minutes of good toothbrushing is still two minutes of good toothbrushing. We are simply looking at what happens to the water while we do it.
 
@@ -54,13 +55,11 @@ Using a **250 ml (2.5 dl) glass**:
 
 That means one two-minute brushing session with the tap running uses approximately **48 glasses of water**.
 
-Forty-eight glasses.
-
-That makes 12 litres a little easier to picture.
+{{< glasses >}}
 
 ## What happens over a year?
 
-We don't brush our teeth just once.
+We don't brush our teeth just once. It is recommended to brush twice per day.
 
 If we brush twice a day, every day, the numbers add up:
 

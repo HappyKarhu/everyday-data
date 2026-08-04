@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Everyday Data</title>
-		<link>https://HappyKarhu.github.io/everyday-data/</link>
+		<link>http://localhost:1313/everyday-data/</link>
 		<description>Recent content on Everyday Data</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -10,21 +10,28 @@
 		
 		
 		
-			<lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://HappyKarhu.github.io/everyday-data/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/everyday-data/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Turning the Tap Off While Brushing Teeth</title>
+				<link>http://localhost:1313/everyday-data/research/toothbrushing-water/</link>
+				<pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/research/toothbrushing-water/</guid>
+				<description>&lt;p&gt;{{ $glass := .Resources.GetMatch &amp;ldquo;images/glass-250ml.png&amp;rdquo; }}&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h1 id=&#34;how-much-water-can-one-person-save-while-brushing-teeth&#34;&gt;How Much Water Can One Person Save While Brushing Teeth?&lt;/h1&gt;&#xA;&lt;p&gt;We brush our teeth every day. But have you ever wondered how much water flows down the drain while we do it?&lt;/p&gt;&#xA;&lt;p&gt;It is a small everyday habit, but it gives us a nice opportunity to look at something familiar through data.&lt;/p&gt;&#xA;&lt;p&gt;So, does it actually make a difference? Let&amp;rsquo;s simply see what the numbers say.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Privacy</title>
-				<link>https://HappyKarhu.github.io/everyday-data/privacy/</link>
+				<link>http://localhost:1313/everyday-data/privacy/</link>
 				<pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>https://HappyKarhu.github.io/everyday-data/privacy/</guid>
-				<description>&lt;p&gt;&lt;em&gt;Last updated: July 22, 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Your privacy matters.&lt;/p&gt;&#xA;&lt;p&gt;Everyday Data is an independent educational and research project. This website is designed to collect as little personal information as possible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-we-collect&#34;&gt;Information We Collect&lt;/h2&gt;&#xA;&lt;p&gt;This website does not require user accounts and does not intentionally collect personal information from visitors.&lt;/p&gt;&#xA;&lt;p&gt;If you contact me through LinkedIn or GitHub, your information is handled according to the privacy policies of those platforms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;cookies&#34;&gt;Cookies&lt;/h2&gt;&#xA;&lt;p&gt;This website does not use advertising cookies.&lt;/p&gt;</description>
+				<guid>http://localhost:1313/everyday-data/privacy/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Last updated: July 22, 2026&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Your privacy matters.&lt;/p&gt;&#xA;&lt;p&gt;Everyday Data is an independent educational and research project. This website is designed to collect as little personal information as possible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;information-we-collect&#34;&gt;Information We Collect&lt;/h2&gt;&#xA;&lt;p&gt;This website does not require user accounts. It does not intentionally collect personal information from visitors unless they voluntarily subscribe to Everyday Data updates.&lt;/p&gt;&#xA;&lt;p&gt;If you contact me through LinkedIn or GitHub, your information is handled according to the privacy policies of those platforms.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>About Everyday Data</title>
-				<link>https://HappyKarhu.github.io/everyday-data/about/</link>
+				<link>http://localhost:1313/everyday-data/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://HappyKarhu.github.io/everyday-data/about/</guid>
+				<guid>http://localhost:1313/everyday-data/about/</guid>
 				<description>&lt;h2 id=&#34;turning-curiosity-into-research&#34;&gt;Turning curiosity into research&lt;/h2&gt;&#xA;&lt;p&gt;I wanted to move beyond simply wondering&amp;hellip; I wanted to know.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;How much water could actually be saved?&lt;/li&gt;&#xA;&lt;li&gt;How much waste could be avoided?&lt;/li&gt;&#xA;&lt;li&gt;What is the environmental impact of a particular everyday choice?&lt;/li&gt;&#xA;&lt;li&gt;What does the data actually tell us?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everyday Data is my personal space for exploring those questions.&lt;/p&gt;&#xA;&lt;p&gt;I use publicly available data, scientific literature, transparent calculations, and visualizations to investigate everyday choices and put them into a context that is easier to understand.&lt;/p&gt;</description>
 			</item>
 	</channel>
