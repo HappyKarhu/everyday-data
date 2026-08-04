@@ -11,6 +11,37 @@
             {{ .Content }}
         </article>
 
+        {{ if .Pages }}
+        <section class="articles-grid">
+
+            {{ range .Pages }}
+            <article class="card">
+
+                <div>
+                    <div class="card-tag">Research</div>
+
+                    <h2>
+                        <a href="{{ .RelPermalink }}">
+                            {{ .Title }}
+                        </a>
+                    </h2>
+
+                    {{ with .Summary }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                </div>
+
+                <div class="card-footer">
+                    <span>{{ .Date.Format "02 Jan 2006" }}</span>
+                    <span>Read research →</span>
+                </div>
+
+            </article>
+            {{ end }}
+
+        </section>
+        {{ end }}
+
     </div>
 </section>
 
