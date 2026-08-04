@@ -57,6 +57,8 @@ That means one two-minute brushing session with the tap running uses approximate
 
 {{< glasses >}}
 
+That makes 12 litres.
+
 ## What happens over a year?
 
 We don't brush our teeth just once. It is recommended to brush twice per day.
@@ -72,6 +74,8 @@ Or, using our glasses:
 **48 glasses × 2 brushings × 365 days = 35,040 glasses**
 
 A very ordinary habit can therefore add up to a surprisingly large amount over a year.
+
+
 
 ## What if we turn off the tap?
 
@@ -93,9 +97,11 @@ But whether a tiny change in something we do every day is worth making.
 
 For me, **48 glasses of water for one brushing is enough to make turning off the tap feel worthwhile.**
 
-Not because we should feel bad about using water.
+But honestly, it was seeing the number and graph for a whole year that really made me stop and think.
 
-Quite the opposite.
+35,040 glasses.
+
+That made the small everyday habit feel a little different.
 
 We are lucky to be able to turn on a tap and have clean water available almost instantly. Perhaps one small way of appreciating that convenience is simply not letting more water run than we actually need.
 

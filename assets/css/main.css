@@ -971,6 +971,14 @@ img {
   margin: 2rem 0;
 }
 
+.glass-year-visual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
 /* ==========================================================
    18. TABLES
 ========================================================== */

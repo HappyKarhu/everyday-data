@@ -1,5 +1,23 @@
+{{ $shortcode := . }}
+
 {{ with .Page.Resources.GetMatch "images/glass-250ml.png" }}
-    {{ $glass := . }}
+{{ $glass := . }}
+
+{{ if eq ($shortcode.Get "year") "true" }}
+
+    <div class="glass-year">
+        <div class="glass-year-visual" id="year-glass-visual">
+            {{ range seq 48 }}
+                <img class="glass-animation-item" src="{{ $glass.RelPermalink }}" alt="">
+            {{ end }}
+        </div>
+
+        <p class="glass-test-label">
+            <span id="year-glass-count">48</span> glasses
+        </p>
+    </div>
+
+{{ else }}
 
     <div class="glass-test">
         {{ range seq 48 }}
@@ -8,6 +26,10 @@
     </div>
 
     <p class="glass-test-label">
-        48 glasses × 250 ml = 12 litres of water
+        <span>For one brushing</span>
+        <strong><span id="glass-count">48</span> glasses</strong>
     </p>
+
+{{ end }}
+
 {{ end }}

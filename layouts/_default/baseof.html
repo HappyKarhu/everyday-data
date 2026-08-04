@@ -59,5 +59,61 @@
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 -->
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const counter = document.getElementById("year-glass-count");
+  const visual = document.getElementById("year-glass-visual");
+
+  if (!counter || !visual) return;
+
+  const target = 35040;
+  const step = 48;
+  const start = 48;
+
+  let current = start;
+
+  function updateVisual() {
+
+    if (current >= target) {
+      counter.textContent = target.toLocaleString("en-US");
+      return;
+    }
+
+    current += step;
+
+    if (current > target) {
+      current = target;
+    }
+
+    /* Add 48 new glasses */
+    for (let i = 0; i < step; i++) {
+      const glass = document.createElement("img");
+
+      glass.className = "glass-animation-item";
+      glass.src = visual.querySelector("img").src;
+      glass.alt = "";
+
+      visual.appendChild(glass);
+    }
+
+    /* Make individual glasses smaller as their number grows */
+    const scale = Math.sqrt(start / current);
+    const size = 55 * scale;
+
+    visual.querySelectorAll(".glass-animation-item").forEach(function (glass) {
+      glass.style.width = size + "px";
+    });
+
+    counter.textContent = current.toLocaleString("en-US");
+
+    setTimeout(updateVisual, 30);
+  }
+
+  updateVisual();
+
+});
+</script>
+
 </body>
 </html>
