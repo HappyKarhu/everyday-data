@@ -27,7 +27,7 @@
       </div>
 
       <div class="articles-grid">
-        {{ range where .Site.RegularPages "Section" "in" (slice "posts" "projects" "content") | first 6 }}
+        {{ range where .Site.RegularPages "Section" "research" | first 6 }}
 
           <a href="{{ .RelPermalink }}" class="card">
             <div>
