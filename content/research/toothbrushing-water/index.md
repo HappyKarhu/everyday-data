@@ -1,18 +1,20 @@
 +++
-title = "How Much Water Do We Waste While Brushing Our Teeth?"
+title = "Turning the Tap Off While Brushing Teeth"
 date = 2026-08-04
 draft = false
 +++
 
-# How Much Water Do We Waste While Brushing Our Teeth?
+# How Much Water Can One Person Save While Brushing Teeth?
 
-We brush our teeth every day. But how much water runs down the drain while we do it?
+We brush our teeth every day. But have you ever wondered how much water flows down the drain while we do it?
 
-This simple question gives us a chance to look at an everyday habit through data.
+It is a small everyday habit, but it gives us a nice opportunity to look at something familiar through data.
+
+And don't worry — this isn't about making you feel guilty for brushing your teeth. Quite the opposite. Let's simply see what the numbers say.
 
 ## The question
 
-How much water could one person use while brushing their teeth if the tap is left running?
+How much water could one person save by turning off the tap while brushing their teeth?
 
 To find out, we need just a few pieces of information:
 
@@ -20,57 +22,101 @@ To find out, we need just a few pieces of information:
 * how much water flows from the tap,
 * how often we brush each day.
 
-## How long do we brush?
+## How long should we brush?
 
-For this analysis, we will use **2 minutes** as the brushing time.
+For this calculation, I use **2 minutes** per brushing because that is the recommended brushing time.
+
+And no, I am definitely **not** suggesting that you brush for less time to save water. 😄
+
+Two minutes of good toothbrushing is still two minutes of good toothbrushing. We are simply looking at what happens to the water while we do it.
 
 ## How much water flows from a tap?
 
-The amount of water depends on the tap and the flow rate. For this calculation, we will use **6 litres per minute** as a representative value.
+The amount of water depends on the tap and its flow rate.
 
-That means that two minutes of brushing with the tap running would use:
+For this calculation, I use **6 litres per minute** as a representative flow rate.
+
+With the tap running for the full two minutes:
 
 **6 litres × 2 minutes = 12 litres of water**
 
-## What does 12 litres look like?
+So one two-minute brushing session can use **12 litres of water** if the tap is left running.
 
-Twelve litres can be difficult to picture.
+## What does 12 litres actually look like?
 
-So instead of showing only litres, we can convert the amount into ordinary drinking glasses.
+Twelve litres is not always easy to imagine.
 
-Using a **250 ml glass**:
+So let's turn it into something much more familiar: a drinking glass.
+
+Using a **250 ml (2.5 dl) glass**:
 
 **12 litres ÷ 0.25 litres = 48 glasses**
 
-So one two-minute toothbrushing session with the tap running uses about **48 glasses of water**.
+That means one two-minute brushing session with the tap running uses approximately **48 glasses of water**.
 
-## From one brushing to one year
+Forty-eight glasses.
 
-If someone brushes their teeth twice a day, the amount quickly adds up.
+That makes 12 litres a little easier to picture.
 
-Over one year, that would be approximately:
+## What happens over a year?
+
+We don't brush our teeth just once.
+
+If we brush twice a day, every day, the numbers add up:
+
+**12 litres × 2 brushings × 365 days = 8,760 litres**
+
+That's **8.76 m³ of water per year**.
+
+Or, using our glasses:
 
 **48 glasses × 2 brushings × 365 days = 35,040 glasses**
 
-That is a lot of water for something that takes only a few minutes a day.
+A very ordinary habit can therefore add up to a surprisingly large amount over a year.
 
-## What happens if we turn off the tap?
+## What if we turn off the tap?
 
-Turning off the tap while brushing can dramatically reduce the amount of water used.
+This is where the small everyday choice comes in.
 
-The exact saving depends on how much water is used when rinsing and how often the tap is opened, so those factors will be considered separately.
+Turning off the tap while brushing means that water isn't continuously flowing while we are busy brushing.
+
+The exact amount saved will depend on how often the tap is opened for rinsing and other parts of the routine. Those details are important, so they should not be hidden behind a single simplified number.
+
+For this first calculation, we are simply looking at the water that flows **while the tap is running during the two-minute brushing period**.
+
+## Is it worth it?
+
+This is the question I actually care about.
+
+Not whether one person can solve the world's water problems.
+
+But whether a tiny change in something we do every day is worth making.
+
+For me, **48 glasses of water for one brushing is enough to make turning off the tap feel worthwhile.**
+
+Not because we should feel bad about using water.
+
+Quite the opposite.
+
+We are lucky to be able to turn on a tap and have clean water available almost instantly. Perhaps one small way of appreciating that convenience is simply not letting more water run than we actually need.
+
+And if a tiny habit takes almost no effort, while the numbers add up over time, why not?
 
 ## The takeaway
 
-A small everyday habit can become surprisingly large when repeated every day.
+One person turning off the tap will not change the world.
 
-The point is not that one person can solve the world's water problems by turning off the tap.
+But Everyday Data isn't really about changing the world with one dramatic action.
 
-It is that data can make the scale of our everyday choices visible.
+It is about asking whether our small everyday choices can add up to something measurable.
 
-**One brushing: 48 glasses.**
+For this example:
 
-**One year: 35,040 glasses.**
+**One brushing: 12 litres.**
+
+**One year: 8,760 litres.**
+
+And for me, **48 glasses of water is enough to make turning off the tap feel worth it.**
 
 ### Sources and assumptions
 
@@ -78,8 +124,8 @@ This calculation uses:
 
 * **2 minutes** brushing time
 * **6 litres/minute** tap flow
-* **250 ml** per glass
+* **250 ml (2.5 dl)** per glass
 * **2 brushings per day**
 * **365 days per year**
 
-These are simplified assumptions used to make the calculation clear and reproducible. Actual water use will vary depending on the tap, water pressure, brushing habits, and rinsing.
+The values are simplified assumptions used to make the calculation clear and reproducible. Actual water use will vary depending on the tap, water pressure, brushing routine, rinsing, and other individual habits.
