@@ -47,17 +47,9 @@
 
         <div class="card-content">
 
-          <h2>
-            {{ with .Params.subtitle }}
-              {{ . }}
-            {{ else }}
-              {{ .Title }}
-            {{ end }}
-          </h2>
+          <h2>{{ .Params.card_title }}</h2>
 
-          {{ with .Summary }}
-            <p>{{ . | plainify | truncate 180 }}</p>
-          {{ end }}
+<p>{{ .Params.card_description | truncate 180 }}</p>
 
         </div>
 
