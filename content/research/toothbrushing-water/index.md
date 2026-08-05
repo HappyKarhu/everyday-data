@@ -74,6 +74,8 @@ If we brush twice a day, every day, the numbers add up:
 
 That's **8.76 m³ of water per year**.
 
+To put 8,760 litres into perspective: that is roughly 110 full bathtubs of water saved per person, every year.
+
 Or, using our glasses:
 
 **48 glasses × 2 brushings × 365 days = 35,040 glasses**
@@ -86,7 +88,9 @@ A very ordinary habit can therefore add up to a surprisingly large amount over a
 
 This is where the small everyday choice comes in.
 
-Turning off the tap while brushing means that water isn't continuously flowing while we are busy brushing.
+Turning off the tap while brushing means water isn’t continuously flowing for two full minutes. 
+
+Even if you use a glass or two of water to rinse at the end, you are still saving over 40 glasses of water every single time you brush.
 
 The exact amount saved will depend on how often the tap is opened for rinsing and other parts of the routine. Those details are important, so they should not be hidden behind a single simplified number.
 
@@ -132,8 +136,8 @@ And for me, **48 glasses of water is enough to make turning off the tap feel wor
 
 This calculation uses:
 
-* **2 minutes** brushing time
-* **6 litres/minute** tap flow
+* **2 minutes** brushing time (recommended by dental associations worldwide)
+* **6 litres/minute** tap flow (standard average flow rate for modern household taps)
 * **250 ml (2.5 dl)** per glass
 * **2 brushings per day**
 * **365 days per year**

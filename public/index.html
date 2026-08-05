@@ -260,19 +260,13 @@ document.addEventListener("DOMContentLoaded", function () {
 );
 
 glasses.forEach(function (glass, index) {
-
-  glass.style.position = "absolute";
-  glass.style.width = "55px";
-  glass.style.maxWidth = "55px";
-
-  glass.style.left = "0";
-
-  glass.style.top =
-    (10 + Math.random() * 60) + "px";
-
-  glass.dataset.delay = index * 80;
-
-});
+        glass.style.position = "absolute";
+        glass.style.width = "55px";
+        glass.style.maxWidth = "55px";
+        glass.style.left = "0";
+        glass.style.top = (10 + Math.random() * 60) + "px";
+        glass.dataset.delay = index * 80;
+      });
 
     startGlass.removeEventListener("click", arguments.callee);
 
@@ -282,6 +276,7 @@ glasses.forEach(function (glass, index) {
 
   const totalDays = 365;
   const glassesPerDay = 96;
+  const litresPerDay = 24;
 
   let day = 1;
   let running = false;
