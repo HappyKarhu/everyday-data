@@ -59,61 +59,191 @@
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 -->
 
+<!--
+Glasses animation
+-->
+
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  const counter = document.getElementById("year-glass-count");
   const visual = document.getElementById("year-glass-visual");
+  const counter = document.getElementById("year-glass-count");
 
-  if (!counter || !visual) return;
+  if (!visual || !counter) return;
 
-  const target = 35040;
-  const step = 48;
-  const start = 48;
+  let glasses = [];
 
-  let current = start;
+  const startGlass = visual.querySelector(".glass-start-glass");
 
-  function updateVisual() {
+  if (startGlass) {
+  startGlass.addEventListener("click", function () {
 
-    if (current >= target) {
-      counter.textContent = target.toLocaleString("en-US");
-      return;
-    }
+    startGlass.style.display = "none";
 
-    current += step;
+    for (let i = 0; i < 96; i++) {
 
-    if (current > target) {
-      current = target;
-    }
-
-    /* Add 48 new glasses */
-    for (let i = 0; i < step; i++) {
       const glass = document.createElement("img");
 
-      glass.className = "glass-animation-item";
-      glass.src = visual.querySelector("img").src;
+      glass.src = startGlass.src;
       glass.alt = "";
+      glass.className = "glass-animation-item";
 
       visual.appendChild(glass);
     }
 
-    /* Make individual glasses smaller as their number grows */
-    const scale = Math.sqrt(start / current);
-    const size = 55 * scale;
+    glasses = Array.from(
+  visual.querySelectorAll(".glass-animation-item")
+);
 
-    visual.querySelectorAll(".glass-animation-item").forEach(function (glass) {
-      glass.style.width = size + "px";
-    });
+glasses.forEach(function (glass, index) {
 
-    counter.textContent = current.toLocaleString("en-US");
+  glass.style.position = "absolute";
+  glass.style.width = "55px";
+  glass.style.maxWidth = "55px";
 
-    setTimeout(updateVisual, 30);
+  glass.style.left = "0";
+
+  glass.style.top =
+    (10 + Math.random() * 60) + "px";
+
+  glass.dataset.delay = index * 80;
+
+});
+
+    startGlass.removeEventListener("click", arguments.callee);
+
+    visual.click();
+  });
+}
+
+  const totalDays = 365;
+  const glassesPerDay = 96;
+
+  let day = 1;
+  let running = false;
+  let animationFrame;
+
+  counter.textContent = "Day 1 → 96 glasses";
+
+  
+
+  visual.style.position = "relative";
+  visual.style.overflow = "hidden";
+  visual.style.height = "140px";
+  visual.style.width = "100%";
+
+  /* -------------------------------------------------------
+     A CONTINUOUS STREAM OF GLASSES
+  ------------------------------------------------------- */
+
+  glasses.forEach(function (glass, index) {
+
+    glass.style.position = "absolute";
+    glass.style.width = "55px";
+    glass.style.maxWidth = "55px";
+
+    /*
+     * Spread the glasses along the stream.
+     * They are initially outside the right side.
+     */
+    glass.style.left = "0";
+    glass.style.top =
+      (10 + Math.random() * 60) + "px";
+
+    glass.dataset.delay = index * 80;
+  });
+
+  /* -------------------------------------------------------
+     ANIMATION
+  ------------------------------------------------------- */
+
+  function animateGlasses(startTime) {
+
+    function move(now) {
+
+      if (!running) return;
+
+      const width = visual.offsetWidth;
+      const distance = width + 100;
+
+      glasses.forEach(function (glass, index) {
+
+        const delay = Number(glass.dataset.delay);
+
+        /*
+         * Each glass has its own position in the stream.
+         */
+        const elapsed =
+          (now - startTime + delay) % 1800;
+
+        const progress = elapsed / 1800;
+
+        /*
+         * Start just outside the right edge
+         * and travel all the way to the left.
+         */
+        const x =
+          width - (progress * distance);
+
+        glass.style.transform =
+          "translateX(" + x + "px)";
+      });
+
+      animationFrame =
+        requestAnimationFrame(move);
+    }
+
+    animationFrame =
+      requestAnimationFrame(move);
   }
 
-  updateVisual();
+  /* -------------------------------------------------------
+     START
+  ------------------------------------------------------- */
+
+  visual.addEventListener("click", function () {
+
+    if (running || day >= totalDays) return;
+
+    running = true;
+
+    animateGlasses(performance.now());
+
+    function updateDay() {
+
+      day++;
+
+      const totalGlasses =
+        day * glassesPerDay;
+
+      counter.textContent =
+        "Day " + day + " → " +
+        totalGlasses.toLocaleString("en-US") +
+        " glasses";
+
+      if (day < totalDays) {
+
+        setTimeout(updateDay, 50);
+
+      } else {
+
+        running = false;
+
+        cancelAnimationFrame(animationFrame);
+
+        counter.textContent =
+          "Day 365 → 35,040 glasses";
+      }
+    }
+
+    updateDay();
+
+  });
 
 });
 </script>
+
 
 </body>
 </html>

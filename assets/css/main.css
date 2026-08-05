@@ -963,6 +963,12 @@ img {
   height: auto;
 }
 
+.glass-start-glass {
+  width: 55px;
+  height: auto;
+  margin: 0 auto;
+}
+
 .glass-test {
   display: flex;
   flex-wrap: wrap;
@@ -973,11 +979,52 @@ img {
 
 .glass-year-visual {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: flex-end;
   gap: 8px;
-  justify-content: center;
-  margin: 2rem 0;
+  width: max-content;
+  min-width: 100%;
+  justify-content: flex-start;
 }
+
+.glass-year-viewport {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2rem 0;
+  cursor: grab;
+  scrollbar-width: thin;
+}
+
+.glass-year-viewport:active {
+  cursor: grabbing;
+}
+
+.glass-year-visual .glass-animation-item {
+  flex: 0 0 auto;
+}
+
+.glass-test-label {
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+.glass-test-label strong {
+  color: var(--primary);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.glass-animation-hint {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--action);
+  margin-bottom: 0.75rem;
+}
+
 
 /* ==========================================================
    18. TABLES

@@ -6,15 +6,19 @@
 {{ if eq ($shortcode.Get "year") "true" }}
 
     <div class="glass-year">
-        <div class="glass-year-visual" id="year-glass-visual">
-            {{ range seq 48 }}
-                <img class="glass-animation-item" src="{{ $glass.RelPermalink }}" alt="">
-            {{ end }}
-        </div>
 
         <p class="glass-test-label">
-            <span id="year-glass-count">48</span> glasses
+            <span id="year-glass-count">Day 1 → 96 glasses</span>
         </p>
+
+        <p class="glass-animation-hint">
+            Click the glasses to see how it adds up over a year
+        </p>
+
+        <div class="glass-year-visual" id="year-glass-visual">
+    <img class="glass-start-glass" src="{{ $glass.RelPermalink }}" alt="250 ml glass">
+</div>
+
     </div>
 
 {{ else }}

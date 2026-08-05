@@ -75,7 +75,7 @@ Or, using our glasses:
 
 A very ordinary habit can therefore add up to a surprisingly large amount over a year.
 
-
+{{< glasses year="true" >}}
 
 ## What if we turn off the tap?
 
@@ -97,7 +97,7 @@ But whether a tiny change in something we do every day is worth making.
 
 For me, **48 glasses of water for one brushing is enough to make turning off the tap feel worthwhile.**
 
-But honestly, it was seeing the number and graph for a whole year that really made me stop and think.
+But honestly, it was seeing what happens when those glasses add up over an entire year that really made me stop and think.
 
 35,040 glasses.
 
