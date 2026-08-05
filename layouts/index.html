@@ -30,43 +30,43 @@
         {{ range where .Site.RegularPages "Section" "research" | first 6 }}
 
           
-        <a href="{{ .RelPermalink }}" class="card">
+      <a href="{{ .RelPermalink }}" class="card">
 
-          <div class="card-tag">
-            Research
-          </div>
+        <div class="card-tag">
+          Research
+        </div>
 
-          {{ with .Resources.GetMatch "images/cover.*" }}
-          <div class="card-image-wrapper">
-            <img
-              src="{{ .RelPermalink }}"
-              alt="{{ $.Title }}"
-              class="card-image">
-          </div>
+        {{ with .Resources.GetMatch "images/cover.*" }}
+        <div class="card-image-wrapper">
+          <img
+            src="{{ .RelPermalink }}"
+            alt="{{ $.Title }}"
+            class="card-image">
+        </div>
+        {{ end }}
+
+        <div class="card-content">
+
+          <h2>
+            {{ with .Params.subtitle }}
+              {{ . }}
+            {{ else }}
+              {{ .Title }}
+            {{ end }}
+          </h2>
+
+          {{ with .Summary }}
+            <p>{{ . | plainify | truncate 180 }}</p>
           {{ end }}
 
-          <div class="card-content">
+        </div>
 
-            <h2>
-              {{ with .Params.subtitle }}
-                {{ . }}
-              {{ else }}
-                {{ .Title }}
-              {{ end }}
-            </h2>
+        <div class="card-footer">
+          <span>{{ .Date.Format "02 Jan 2006" }}</span>
+          <span>{{ .ReadingTime }} min read</span>
+        </div>
 
-            {{ with .Summary }}
-              <p>{{ . | plainify | truncate 180 }}</p>
-            {{ end }}
-
-          </div>
-
-          <div class="card-footer">
-            <span>{{ .Date.Format "02 Jan 2006" }}</span>
-            <span>Read research →</span>
-          </div>
-
-        </a>
+      </a>
 
 
 
