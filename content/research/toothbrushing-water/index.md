@@ -2,6 +2,8 @@
 title = "Turning the Tap Off While Brushing Teeth"
 date = 2026-08-04
 draft = false
+card_title = "How Much Water Can One Person Save While Brushing Teeth?"
+card_description = "We brush our teeth every day. But have you ever wondered how much water flows down the drain while we do it? It is a small everyday habit, but it gives us a nice opportunity to look at something familiar through data. So, does it actually make a difference? Let's simply see what the numbers say."
 +++
 
 # How Much Water Can One Person Save While Brushing Teeth?

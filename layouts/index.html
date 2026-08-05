@@ -29,22 +29,46 @@
       <div class="articles-grid">
         {{ range where .Site.RegularPages "Section" "research" | first 6 }}
 
-          <a href="{{ .RelPermalink }}" class="card">
-            <div>
-              <div class="card-tag">
-                {{ .Params.category | default "Research" }}
-              </div>
+          
+        <a href="{{ .RelPermalink }}" class="card">
 
-              <h2>{{ .Title }}</h2>
+          <div class="card-tag">
+            Research
+          </div>
 
-              <p>{{ .Summary | truncate 120 }}</p>
-            </div>
+          {{ with .Resources.GetMatch "images/cover.*" }}
+          <div class="card-image-wrapper">
+            <img
+              src="{{ .RelPermalink }}"
+              alt="{{ $.Title }}"
+              class="card-image">
+          </div>
+          {{ end }}
 
-            <div class="card-footer">
-              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-              <span>{{ .ReadingTime }} min read</span>
-            </div>
-          </a>
+          <div class="card-content">
+
+            <h2>
+              {{ with .Params.subtitle }}
+                {{ . }}
+              {{ else }}
+                {{ .Title }}
+              {{ end }}
+            </h2>
+
+            {{ with .Summary }}
+              <p>{{ . | plainify | truncate 180 }}</p>
+            {{ end }}
+
+          </div>
+
+          <div class="card-footer">
+            <span>{{ .Date.Format "02 Jan 2006" }}</span>
+            <span>Read research →</span>
+          </div>
+
+        </a>
+
+
 
         {{ else }}
 

@@ -17,20 +17,32 @@
             {{ range .Pages }}
             <article class="card">
 
+                <div class="card-tag">Research</div>
+
+                {{ with .Resources.GetMatch "images/cover.*" }}
+                <a href="{{ $.RelPermalink }}" class="card-image-link">
+                    <img
+                        src="{{ .RelPermalink }}"
+                        alt="{{ $.Title }}"
+                        class="card-image">
+                </a>
+                {{ end }}
+
                 <div>
-                    <div class="card-tag">Research</div>
 
                     <h2>
-                        <a href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a>
+                        {{ with .Params.card_title }}
+                            {{ . }}
+                        {{ end }}
                     </h2>
 
-                    {{ with .Summary }}
+                    {{ with .Params.card_description }}
                     <p>{{ . }}</p>
                     {{ end }}
+
                 </div>
 
+                    
                 <div class="card-footer">
                     <span>{{ .Date.Format "02 Jan 2006" }}</span>
                     <span>Read research →</span>
