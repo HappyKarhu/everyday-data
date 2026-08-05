@@ -17,7 +17,7 @@
   
   
   
-  <link rel="stylesheet" href="/everyday-data/css/main.min.a8abfe4bbc11b859c9937efe963a2ba9823ea99bb695597fd8ccf0fc5474c939.css" integrity="sha256-qKv&#43;S7wRuFnJk37&#43;ljorqYI&#43;qZu2lVl/2Mzw/FR0yTk=">
+  <link rel="stylesheet" href="/everyday-data/css/main.min.49b7a3a6bdb5722d1b09b6450303336ef7421d257fe0413b881e90852e2df3fd.css" integrity="sha256-Sbejpr21ci0bCbZFAwMzbvdCHSV/4EE7iB6QhS4t8/0=">
 
 </head>
 <body>
@@ -86,7 +86,9 @@
               <h2>Turning the Tap Off While Brushing Teeth</h2>
 
               <p><h1 id="how-much-water-can-one-person-save-while-brushing-teeth">How Much Water Can One Person Save While Brushing Teeth?</h1>
-<p>We brush our teeth every day. But have you ever wondered how …</p></p>
+<p><img src="images/toothbrush-cleaning.jpg" alt="Toothbrush and water"></p>
+<p><em>Photo: ulleo / Pixabay</em></p>
+<p>We brush our teeth every day. But have …</p></p>
             </div>
 
             <div class="card-footer">
@@ -212,13 +214,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!visual || !counter) return;
 
-  const glasses = Array.from(
-    visual.querySelectorAll(".glass-animation-item")
-  );
+  let glasses = [];
 
   const startGlass = visual.querySelector(".glass-start-glass");
-
-  if (!glasses.length) return;
 
   if (startGlass) {
   startGlass.addEventListener("click", function () {
@@ -235,6 +233,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
       visual.appendChild(glass);
     }
+
+    glasses = Array.from(
+  visual.querySelectorAll(".glass-animation-item")
+);
+
+glasses.forEach(function (glass, index) {
+
+  glass.style.position = "absolute";
+  glass.style.width = "55px";
+  glass.style.maxWidth = "55px";
+
+  glass.style.left = "0";
+
+  glass.style.top =
+    (10 + Math.random() * 60) + "px";
+
+  glass.dataset.delay = index * 80;
+
+});
 
     startGlass.removeEventListener("click", arguments.callee);
 

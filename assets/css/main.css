@@ -787,7 +787,7 @@ img {
 ========================================================== */
 
 .page-single {
-  padding: 4rem 0 6rem;
+  padding: 5rem 0 7rem;
 }
 
 .page-single .container {
@@ -795,14 +795,18 @@ img {
 }
 
 .page-header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .page-header h1 {
   color: var(--primary);
-  font-size: 3.2rem;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /* ---------- Markdown ---------- */
@@ -823,6 +827,25 @@ img {
 .page-body p {
   margin-bottom: 1.25rem;
   line-height: 1.8;
+}
+
+.page-body p:has(> img:first-child) {
+  margin-top: 2.5rem;
+}
+
+.page-body p:has(> img:first-child) + p {
+  margin-top: -0.75rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.page-body p:has(> img:first-child) img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
 }
 
 .page-body ul,

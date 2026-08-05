@@ -6,6 +6,9 @@ draft = false
 
 # How Much Water Can One Person Save While Brushing Teeth?
 
+![Toothbrush and water](images/toothbrush-cleaning.jpg)
+
+*Photo: ulleo / Pixabay*
 
 We brush our teeth every day. But have you ever wondered how much water flows down the drain while we do it?
 
