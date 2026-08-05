@@ -15,40 +15,37 @@
         <section class="articles-grid">
 
             {{ range .Pages }}
-            <article class="card">
 
-                <div class="card-tag">Research</div>
+            <a href="{{ .RelPermalink }}" class="card">
+
+                <div class="card-tag">
+                    Research
+                </div>
 
                 {{ with .Resources.GetMatch "images/cover.*" }}
-                <a href="{{ $.RelPermalink }}" class="card-image-link">
+                <div class="card-image-wrapper">
                     <img
                         src="{{ .RelPermalink }}"
                         alt="{{ $.Title }}"
                         class="card-image">
-                </a>
+                </div>
                 {{ end }}
 
-                <div>
+                <div class="card-content">
 
-                    <h2>
-                        {{ with .Params.card_title }}
-                            {{ . }}
-                        {{ end }}
-                    </h2>
+                    <h2>{{ .Params.card_title }}</h2>
 
-                    {{ with .Params.card_description }}
-                    <p>{{ . }}</p>
-                    {{ end }}
+                    <p>{{ .Params.card_description | truncate 180 }}</p>
 
                 </div>
 
-                    
                 <div class="card-footer">
                     <span>{{ .Date.Format "02 Jan 2006" }}</span>
-                    <span>Read research →</span>
+                    <span>{{ .ReadingTime }} min read</span>
                 </div>
 
-            </article>
+            </a>
+
             {{ end }}
 
         </section>
