@@ -63,7 +63,6 @@
 Glasses animation
 -->
 
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -124,7 +123,7 @@ glasses.forEach(function (glass, index) {
   let running = false;
   let animationFrame;
 
-  counter.textContent = "Day 1 → 96 glasses";
+ counter.textContent = "Day 1 → 96 glasses → 24 litres";
 
   
 
@@ -217,10 +216,15 @@ glasses.forEach(function (glass, index) {
       const totalGlasses =
         day * glassesPerDay;
 
+      const totalLitres =
+        day * 24;
+
       counter.textContent =
         "Day " + day + " → " +
         totalGlasses.toLocaleString("en-US") +
-        " glasses";
+        " glasses → " +
+        totalLitres.toLocaleString("en-US") +
+        " litres";
 
       if (day < totalDays) {
 
@@ -233,7 +237,7 @@ glasses.forEach(function (glass, index) {
         cancelAnimationFrame(animationFrame);
 
         counter.textContent =
-          "Day 365 → 35,040 glasses";
+          "Day 365 → 35,040 glasses → 8,400 litres";
       }
     }
 

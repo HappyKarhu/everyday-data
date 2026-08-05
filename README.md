@@ -112,9 +112,19 @@ Visit the project:
 
 👉 https://happykarhu.github.io/everyday-data/
 
-**What is the environmental impact of turning off the tap while brushing your teeth for one year?**
+## Project status
 
-*Status: In progress*
+Everyday Data is currently a work in progress.
+
+The website and research projects are being developed step by step. Articles may be published and shared while the project continues to grow, with new research, visualizations, and improvements added over time.
+
+Feedback & Suggestions
+
+I’m always happy to hear your thoughts.
+
+If you have a suggestion, notice something that could be improved, or have an idea for a future article or visualization, feel free to share it.
+
+Everyday Data is also part of my learning journey in data analysis and web development, so feedback and new perspectives are very welcome.
 
 ## Research Principles
 

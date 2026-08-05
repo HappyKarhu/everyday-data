@@ -1030,7 +1030,8 @@ img {
 
 .glass-test-label {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.50rem;
+  font-weight: 700;
   color: var(--primary);
   margin-top: 1rem;
 }
