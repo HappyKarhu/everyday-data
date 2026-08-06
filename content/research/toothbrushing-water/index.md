@@ -132,15 +132,14 @@ For this example:
 
 And for me, **48 glasses of water is enough to make turning off the tap feel worth it.**
 
-### Data & sources
+### Sources and assumptions
 
-The calculation uses 2 minutes of brushing and two brushing sessions per day, based on recommendations from the American Dental Association and Mayo Clinic.
+This calculation uses:
 
-The 6 litres per minute faucet flow rate is based on the Finnish Ministry of the Environment's technical standard for bathroom sink faucets. Comparable flow-rate information from the European Commission and U.S. EPA WaterSense was also reviewed.
+* **2 minutes** brushing time (recommended by dental associations worldwide)
+* **6 litres/minute** tap flow (standard average flow rate for modern household taps)
+* **250 ml (2.5 dl)** per glass
+* **2 brushings per day**
+* **365 days per year**
 
-The 250 ml glass, 2 brushings per day, and 365 days per year are used as simple calculation assumptions to make the results easy to understand and reproduce.
-
-Actual water use will vary depending on the faucet, water pressure, rinsing habits, and individual brushing routines.
-
-Sources:
-American Dental Association; Mayo Clinic; Ministry of the Environment, Finland; European Commission Joint Research Centre; U.S. Environmental Protection Agency WaterSense.
+The values are simplified assumptions used to make the calculation clear and reproducible. Actual water use will vary depending on the tap, water pressure, brushing routine, rinsing, and other individual habits.
