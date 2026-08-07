@@ -143,4 +143,4 @@ The 250 ml glass, 2 brushings per day, and 365 days per year are used as simple 
 Actual water use will vary depending on the faucet, water pressure, rinsing habits, and individual brushing routines.
 
 Sources:
-American Dental Association; Mayo Clinic; Ministry of the Environment, Finland; European Commission Joint Research Centre; U.S. Environmental Protection Agency WaterSense.
+American Dental Association; Mayo Clinic; Ministry of the Environment, Finland; European Commission Joint Research Centre; U.S. Environmental Protection Agency WaterSense..
