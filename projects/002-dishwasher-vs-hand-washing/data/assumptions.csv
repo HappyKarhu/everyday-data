@@ -1,0 +1,17 @@
+variable,value,unit,source,description
+comparison_place_settings,12,place settings,WA-007,Comparison basis used in the main scientific study
+dishwasher_eu_average_2020,10,L/cycle,WA-004,EU average dishwasher water consumption in 2020
+dishwasher_efficient,9,L/cycle,WA-004,Efficient dishwasher water consumption for up to 15 place settings
+dishwasher_consumer_test,13,L/load,WA-005,Consumer NZ average dishwasher water use for a full load
+handwashing_consumer_test,39,L/load,WA-005,Consumer NZ minimum handwashing water use including pre-rinsing
+manual_water_min,34.7,L/12 place settings,WA-007,Lowest country-level average manual dishwashing consumption reported
+manual_water_max,160.1,L/12 place settings,WA-007,Highest country-level average manual dishwashing consumption reported
+dishwasher_water_min_review,12.0,L/load,WA-007,Lowest dishwasher water consumption in reviewed comparisons
+dishwasher_water_max_review,17.7,L/load,WA-007,Highest dishwasher water consumption in reviewed comparisons
+manual_comparison_example,103,L/12 place settings,WA-007,Manual dishwashing water consumption in one direct comparison
+dishwasher_comparison_example,15,L/load,WA-007,Dishwasher water consumption in the same direct comparison
+uk_pre_rinsing_water,4.4,L/cycle,WA-006,Estimated UK pre-rinsing water consumption
+italy_pre_rinsing_water,19.7,L/cycle,WA-006,Estimated Italy pre-rinsing water consumption
+handwashing_which_2026,4.5,L/place setting,WA-008,Estimated handwashing water use based on a 9-L washing-up bowl for approximately two place settings
+dishwasher_which_main_2026,0.926,L/place setting,WA-008,Average water use of 33 recently tested dishwashers on main programmes
+dishwasher_which_eco_2026,0.696,L/place setting,WA-008,Average water use of 33 recently tested dishwashers on eco programmes
