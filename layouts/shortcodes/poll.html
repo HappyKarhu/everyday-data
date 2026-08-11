@@ -1,0 +1,25 @@
+<div class="poll" data-poll-id="{{ .Get "id" }}">
+    <h3 class="poll-question">
+        {{ .Get "question" }}
+    </h3>
+
+    <div class="poll-options">
+        <button class="poll-option" data-option="dishwasher">
+            🟢 Dishwasher
+        </button>
+
+        <button class="poll-option" data-option="hand-washing">
+            🟠 Hand washing
+        </button>
+    </div>
+
+    <div class="poll-result" hidden>
+        <strong>Your vote is in!</strong>
+
+        <div class="poll-percentages"></div>
+
+        <p class="poll-votes-count"></p>
+
+        <p><strong>Now let's see what the data says.</strong></p>
+    </div>
+</div>
