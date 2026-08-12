@@ -48,10 +48,10 @@ everyday-data/
 │   ├── about.md           # About Everyday Data
 │   └── research/
 │       ├── _index.md      # Research section metadata
-│       └── turning-off-the-tap/
-│           ├── index.md   # Project article
-│           ├── cover.jpg
-│           └── graph1.png
+│       └── projects/ and other articles-researches
+│           ├── # Project article 1
+│           ├── # Project article 2
+│           └── # Project article 3 ...
 ├── layouts/
 │   ├── index.html         # Homepage layout template
 │   ├── partials
@@ -106,6 +106,8 @@ Research and visualizations are created using:
 - Markdown
 - HTML & CSS
 
+Interactive poll data is stored anonymously using **Supabase**.
+
 ## 🌐 Website 
 
 Visit the project:
@@ -136,11 +138,6 @@ Every research project aims to be:
 - Easy to understand
 - Built from publicly available data whenever possible
 
-## Current Research
-
-**What is the environmental impact of turning off the tap while brushing your teeth for one year?**
-
-*Status: In progress*
 
 ## Purpose & About the author
 

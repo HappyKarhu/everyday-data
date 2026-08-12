@@ -26,6 +26,7 @@
    20. Charts
    21. Page Content background
    22. Article share
+   23. Poll
 ========================================================== */
 
 /* ==========================================================
@@ -1087,6 +1088,27 @@ img {
 /* ==========================================================
    20. CHARTS
 ========================================================== */
+.page-body figure {
+    margin: 3rem auto;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.page-body figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.page-body figure figcaption {
+    margin-top: 0.9rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-style: italic;
+    line-height: 1.4;
+}
 
 /* ==========================================================
    21. PAGE CONTENT BACKGROUND
@@ -1162,4 +1184,117 @@ img {
 .article-share-links a:hover {
   color: var(--primary);
   background-color: var(--success-bg);
+}
+
+/* ==========================================================
+   23. Poll
+   ========================================================== */
+
+.poll {
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 680px;
+    background: var(--ed-card);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.poll-question {
+    color: var(--primary);
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+.poll-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.poll-option {
+    width: 100%;
+    min-height: 70px;
+    padding: 1rem 1.25rem;
+
+    background: #FFFFFF;
+    color: var(--text-main);
+
+    border: 2px solid var(--border);
+    border-radius: 14px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.poll-option:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary);
+    background: var(--success-bg);
+    box-shadow: 0 8px 20px rgba(24, 43, 40, 0.08);
+}
+
+.poll-option:focus-visible {
+    outline: 3px solid rgba(15, 118, 110, 0.25);
+    outline-offset: 3px;
+}
+
+.poll-option:active {
+    transform: translateY(0);
+}
+
+/* Result area */
+
+.poll-result {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.poll-result strong {
+    color: var(--primary);
+}
+
+.poll-percentages {
+    margin-top: 1rem;
+}
+
+.poll-votes-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.poll-privacy {
+    margin: 1rem 0 0;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .poll {
+        padding: 1.5rem;
+    }
+
+    .poll-options {
+        grid-template-columns: 1fr;
+    }
+
+    .poll-option {
+        min-height: 64px;
+    }
 }
