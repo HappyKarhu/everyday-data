@@ -690,6 +690,10 @@ img {
   text-align: left;
 }
 
+.footer-social .social-links {
+  align-items: center;
+}
+
 .social-links a {
   display: inline-flex;
   align-items: center;
@@ -733,6 +737,14 @@ img {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+    .footer-social {
+    text-align: center;
+  }
+
+  .footer-social .social-links {
+    align-items: center;
   }
 
   .newsletter-form {
