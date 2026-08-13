@@ -29,3 +29,22 @@
     </nav>
   </div>
 </header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".mobile-menu-toggle");
+  const nav = document.querySelector("#main-navigation");
+
+  if (!button || !nav) return;
+
+  button.addEventListener("click", function () {
+    const isOpen = nav.classList.toggle("is-open");
+
+    button.setAttribute("aria-expanded", isOpen);
+    button.setAttribute(
+      "aria-label",
+      isOpen ? "Close menu" : "Open menu"
+    );
+  });
+});
+</script>
