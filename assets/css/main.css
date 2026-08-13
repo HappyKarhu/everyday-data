@@ -798,7 +798,7 @@ img {
   white-space: nowrap;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   .nav-wrapper {
     flex-wrap: wrap;
@@ -1030,7 +1030,7 @@ img {
   }
 
   .about-page-header h1 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 
   .about-profile {
