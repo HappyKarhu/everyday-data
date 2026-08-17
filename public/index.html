@@ -26,7 +26,7 @@
   
   
   
-  <link rel="stylesheet" href="/everyday-data/css/main.min.8cb04f452e3c6d8a8105a7b4ade90a85c1de264e26a29f107d3e1434a8385c4f.css" integrity="sha256-jLBPRS48bYqBBae0rekKhcHeJk4mop8QfT4UNKg4XE8=">
+  <link rel="stylesheet" href="/everyday-data/css/main.min.402350c82efeb28ddab3f100e4a42b3346e5284564d86c60a4bf720c5aa25d94.css" integrity="sha256-QCNQyC7&#43;so3as/EA5KQrM0blKEVk2GxgpL9yDFqiXZQ=">
 
 </head>
 <body>
@@ -41,7 +41,20 @@
     </a>
 
     
-    <nav aria-label="Main navigation">
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    
+    <nav id="main-navigation" aria-label="Main navigation">
       <ul class="nav-links">
         <li><a href="/everyday-data/" class="active">Home</a></li>
         <li><a href="/everyday-data/research/" class="">Research</a></li>
@@ -50,6 +63,25 @@
     </nav>
   </div>
 </header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".mobile-menu-toggle");
+  const nav = document.querySelector("#main-navigation");
+
+  if (!button || !nav) return;
+
+  button.addEventListener("click", function () {
+    const isOpen = nav.classList.toggle("is-open");
+
+    button.setAttribute("aria-expanded", isOpen);
+    button.setAttribute(
+      "aria-label",
+      isOpen ? "Close menu" : "Open menu"
+    );
+  });
+});
+</script>
 
 
   <section class="page-content">
@@ -189,6 +221,69 @@
       </div>
 
       
+      <div class="footer-col footer-newsletter">
+        <h3>Stay updated</h3>
+        <p>Get new insights in your inbox.</p>
+        <div class="sib-form">
+  <div id="sib-form-container" class="newsletter-form-container">
+    <div id="error-message" class="newsletter-message newsletter-message--error sib-form-message-panel" role="alert">
+      <div class="sib-form-message-panel__text">
+        <span class="sib-form-message-panel__inner-text">Your subscription could not be saved. Please try again.</span>
+      </div>
+    </div>
+    
+    <div id="success-message" class="newsletter-message newsletter-message--success sib-form-message-panel" role="status">
+      <div class="sib-form-message-panel__text">
+        <span class="sib-form-message-panel__inner-text">Thanks for subscribing to Everyday Data! Please check your inbox to confirm your subscription.</span>
+      </div>
+    </div>
+    
+    <div id="sib-container">
+      <form id="sib-form" method="POST" action="https://ba2824e1.sibforms.com/serve/MUIFAMAHrwlnYeuMOsQCg_qgPlF-ATKpOYx93Xflzwtqa69KWUTNWSMk6mOk45CxrSrnmqFCjSr7JEwn28Zzy5s6P3Z0Dh-bPt9BS5cFd9mOthhAhs2scfvioKT3VUJN2UYsibMiu-eaV4S5K-EANZaZ8Cm5rTe6B-qL4m_qb4Rj08zk3AjdT-VvpVFBxkUspFF3Vz2pXFJnuLBkoQ==" data-type="subscription" class="newsletter-form">
+        <div class="sib-input newsletter-email-entry">
+          <div class="form__entry entry_block">
+            <div class="entry__field">
+              <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="Your email" data-required="true" required aria-label="Your email">
+            </div>
+            <label class="entry__error entry__error--primary"></label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-action">
+          <svg class="sib-hide-loader-icon" viewBox="0 0 512 512" aria-hidden="true">
+            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+          </svg>
+          <span>Subscribe</span>
+        </button>
+        
+        <div class="sib-optin" style="width: 100%;">
+          <div class="form__entry entry_mcq">
+            <div class="entry__choice">
+              <label class="newsletter-consent">
+                <input type="checkbox" class="input_replaced" id="OPT_IN" name="OPT_IN" value="1" data-required="true" required>
+                <span>
+                  I agree to receive Everyday Data updates.
+                  <a href="/everyday-data/privacy/" target="_blank" rel="noopener">Privacy Policy</a>
+                </span>
+
+              </label>
+              <p class="newsletter-note">
+                Please check your spam folder for the confirmation email.
+              </p>
+            </div>
+            <label class="entry__error entry__error--primary"></label>
+            
+          </div>
+        </div>
+
+        <input type="text" name="email_address_check" value="" class="input--hidden newsletter-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="html_type" value="simple">
+      </form>
+    </div>
+  </div>
+</div>
+      </div>
 
       
       <div class="footer-col footer-social">
