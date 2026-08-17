@@ -64,3 +64,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Send new post notification to Brevo subscribers
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: |
+          curl -X POST "https://api.brevo.com/v3/smtp/email" \
+            -H "accept: application/json" \
+            -H "api-key: ${BREVO_API_KEY}" \
+            -H "content-type: application/json" \
+            -d '{
+              "sender": {
+                "name": "Everyday Data",
+                "email": "everydaydata.research@gmail.com"
+              },
+              "to": [
+                {
+                  "listIds": [2]
+                }
+              ],
+              "subject": "New research from Everyday Data",
+              "htmlContent": "<html><body><h2>A new article is available</h2><p>There is a new Everyday Data article to explore.</p><p><a href=\"https://happykarhu.github.io/everyday-data/research/\">Read the latest research →</a></p></body></html>"
+            }'
