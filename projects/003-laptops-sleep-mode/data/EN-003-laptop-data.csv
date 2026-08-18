@@ -1,0 +1,3 @@
+assumption,value,unit,note
+sleep_hours_per_night,8,hours,Modelling assumption for overnight Sleep mode
+days_per_year,365,days,One year
