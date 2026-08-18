@@ -2,25 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/everyday-data/research/dishwasher-vs-handwashing/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://HappyKarhu.github.io/everyday-data/research/laptop-sleep-mode/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://HappyKarhu.github.io/everyday-data/research/dishwasher-vs-handwashing/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/everyday-data/research/toothbrushing-water/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/research/toothbrushing-water/</loc>
     <lastmod>2026-08-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/privacy/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/privacy/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/research/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/research/</loc>
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/about/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/categories/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/everyday-data/tags/</loc>
+    <loc>https://HappyKarhu.github.io/everyday-data/tags/</loc>
   </url>
 </urlset>

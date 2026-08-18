@@ -1,0 +1,210 @@
+<div class="poll laptop-poll" data-poll-id="{{ .Get "id" }}">
+    <h3 class="poll-question">
+        {{ .Get "question" }}
+    </h3>
+
+    <p class="poll-description">
+        For comparison, a 10 W LED bulb can provide general lighting for a room.
+    </p>
+
+    <div class="poll-options">
+
+        <button class="poll-option" data-option="10-or-less">
+        💡 10 hours or less
+        </button>
+
+        <button class="poll-option" data-option="11-50">
+            💡💡 11–50 hours
+        </button>
+
+        <button class="poll-option" data-option="51-120">
+            💡💡💡 51–120 hours
+        </button>
+
+        <button class="poll-option" data-option="more-than-121">
+            💡💡💡💡 More than 121 hours
+        </button>
+
+    </div>
+
+    <p class="poll-privacy">
+        Your vote is completely anonymous. No personal data is collected.
+    </p>
+
+    <div class="poll-result" hidden>
+        <strong>Your vote is in!</strong>
+
+        <div class="poll-percentages"></div>
+
+        <p class="poll-votes-count"></p>
+
+        <p><strong>Now let's see what the data says.</strong></p>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const poll = document.querySelector(".laptop-poll");
+    if (!poll) return;
+
+    const pollId = poll.dataset.pollId;
+    const buttons = poll.querySelectorAll(".poll-option");
+
+    const result = poll.querySelector(".poll-result");
+    const percentages = poll.querySelector(".poll-percentages");
+    const votesCount = poll.querySelector(".poll-votes-count");
+
+    const SUPABASE_URL = "https://qaxnrgswltuzjkayskkh.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_Agh45qyVe7NGG7MnA8bL3Q_QDNPz83U";
+
+
+    async function loadResults() {
+
+        const response = await fetch(
+            SUPABASE_URL +
+            "/rest/v1/poll_votes?select=option&poll_id=eq." +
+            encodeURIComponent(pollId),
+            {
+                method: "GET",
+                headers: {
+                    "apikey": SUPABASE_KEY,
+                    "Authorization": "Bearer " + SUPABASE_KEY
+                }
+            }
+        );
+
+        if (!response.ok) {
+            const errorText = await response.text();
+
+            console.error(
+                "Supabase results error:",
+                response.status,
+                errorText
+            );
+
+            throw new Error("Results could not be loaded.");
+        }
+
+        const votes = await response.json();
+
+        const voteCounts = {
+            "10-or-less": 0,
+            "11-50": 0,
+            "51-120": 0,
+            "more-than-121": 0
+        };
+
+        votes.forEach(function (vote) {
+
+            if (voteCounts.hasOwnProperty(vote.option)) {
+                voteCounts[vote.option]++;
+            }
+
+        });
+
+        const totalVotes = votes.length;
+
+        let html = "";
+
+        Object.keys(voteCounts).forEach(function (option) {
+
+            const count = voteCounts[option];
+
+            const percent = totalVotes > 0
+                ? Math.round((count / totalVotes) * 100)
+                : 0;
+
+            const labels = {
+                "10-or-less": "10 hours or less",
+                "11-50": "11–50 hours",
+                "51-120": "51–120 hours",
+                "more-than-121": "More than 121 hours"
+            };
+
+            html += `
+                <p>
+                    ${labels[option]}:
+                    <strong>${percent}%</strong>
+                </p>
+            `;
+
+        });
+
+        percentages.innerHTML = html;
+
+        votesCount.textContent =
+            totalVotes === 1
+                ? "1 vote"
+                : totalVotes + " votes";
+    }
+
+
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", async function () {
+
+            const option = this.dataset.option;
+
+            buttons.forEach(function (button) {
+                button.disabled = true;
+            });
+
+            try {
+
+                const response = await fetch(
+                    SUPABASE_URL + "/rest/v1/poll_votes",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Prefer": "return=minimal",
+                            "apikey": SUPABASE_KEY,
+                            "Authorization": "Bearer " + SUPABASE_KEY
+                        },
+                        body: JSON.stringify({
+                            poll_id: pollId,
+                            option: option
+                        })
+                    }
+                );
+
+                if (!response.ok) {
+
+                    const errorText = await response.text();
+
+                    console.error(
+                        "Supabase vote error:",
+                        response.status,
+                        errorText
+                    );
+
+                    throw new Error("Vote could not be saved.");
+                }
+
+                await loadResults();
+
+                buttons.forEach(function (button) {
+                    button.style.display = "none";
+                });
+
+                result.hidden = false;
+
+            } catch (error) {
+
+                console.error(error);
+
+                buttons.forEach(function (button) {
+                    button.disabled = false;
+                });
+
+                alert("Something went wrong. Please try again.");
+
+            }
+
+        });
+
+    });
+
+});
+</script>
