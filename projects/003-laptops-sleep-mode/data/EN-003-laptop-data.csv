@@ -1,3 +1,21 @@
-assumption,value,unit,note
-sleep_hours_per_night,8,hours,Modelling assumption for overnight Sleep mode
-days_per_year,365,days,One year
+ID,Manufacturer,Model,Market date,Off W,Sleep W,Long Idle W,Short Idle W,Low-power / Sleep technology
+L01,Lenovo,IdeaPad Slim 3 14ITN9,2024-12-19,0.3,0.4,0.4,5.4,Sleep Mode
+L02,Lenovo,IdeaPad Slim 3 14IRU9,2024-01-15,0.2,0.4,0.4,4.1,ALPM
+L03,Lenovo,Yoga Slim 7 14Q8X9,2024-05-09,0.3,0.7,0.7,5.8,Sleep Mode
+L04,Lenovo,IdeaPad Slim 5 14AGP11,2025-12-08,0.1,0.7,0.7,6.2,Sleep Mode
+L05,Lenovo,ThinkPad P1 Gen 8,2025-09-25,0.3,0.9,0.9,6.7,Connected Sleep
+L06,ASUS,X1607Q,2025-01-06,0.3,0.5,0.5,3.7,Modern Standby
+L07,ASUS,X1504VA,2025-11-10,0.1,0.5,0.5,4.6,Modern Standby
+L08,ASUS,FA608,2025-05-19,0.3,1.1,1.1,5.3,ALPM
+L09,Acer,TMP416-53,2025-10-27,0.6,1.2,1.2,4.4,ALPM
+L10,Acer,A14-52M,2025-10-27,0.5,0.9,0.9,4.1,ALPM
+L11,Acer,N23C3,2025-08-08,0.3,0.8,0.8,6.1,ALPM
+L12,Acer,N22C6,2025-10-19,0.3,0.5,0.5,4.8,ALPM
+L13,Framework,FRANQA0000,2025-03-28,0.4,0.9,0.9,5.6,Connected Sleep
+L14,Dell,P198G : DB04250,2025-02-18,0.3,0.7,0.7,4.7,ALPM
+L15,Dell,P136F : MC16250,2025-03-20,0.2,1.1,1.1,5.5,ALPM
+L16,Dell,P127F : Precision 3590,2024-03-05,0.3,1,1,6.3,ALPM
+L17,Dell,P196G : MC14255,2025-07-17,0.3,0.9,0.9,6.1,ALPM
+L18,HP,Elite x360 1040 G11,2024-04-26,0.3,0.8,0.8,6.1,Connected Sleep
+L19,HP,"EliteBook 6 G1q 14""",2025-04-11,0.3,1.5,1.5,5,Connected Sleep
+L20,MSI,MS-15QK,2026-01-08,0.4,0.8,0.8,5.4,Connected Sleep

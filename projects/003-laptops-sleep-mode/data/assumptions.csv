@@ -1,4 +1,5 @@
 assumption,value,unit,note
-sleep_hours_per_day,8,hours,Overnight Sleep scenario
+sleep_hours_per_night,8,hours,Modelling assumption for overnight Sleep mode
 sleep_hours_extended_per_day,16,hours,Extended Sleep scenario
 days_per_year,365,days,One year
+led_bulb_power,10,W,Reference LED bulb power for comparison

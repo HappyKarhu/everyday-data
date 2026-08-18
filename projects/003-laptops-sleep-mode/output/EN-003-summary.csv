@@ -1,0 +1,14 @@
+metric,value,unit
+Number of laptops,20.0,laptops
+Median Sleep power,0.8,W
+Mean Sleep power,0.8150000000000001,W
+Minimum Sleep power,0.4,W
+Maximum Sleep power,1.5,W
+Median Off power,0.3,W
+Mean Off power,0.30499999999999994,W
+Minimum Off power,0.1,W
+Maximum Off power,0.6,W
+Median Sleep minus Off,0.5,W
+Mean Sleep minus Off,0.51,W
+Minimum Sleep minus Off,0.10000000000000003,W
+Maximum Sleep minus Off,1.2,W
