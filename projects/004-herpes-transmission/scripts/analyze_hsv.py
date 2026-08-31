@@ -207,7 +207,91 @@ print("\n--- HSV-006 values ---")
 print("HSV-1 detectable during episode:", detectable_episode, "%")
 print("Vesicle/ulcer shedding:", vesicle_ulcer_shedding, "%")
 
+# ============================================================
+# Stage Detection Calculations
+# ============================================================
 
+stage_data = pd.read_csv(
+    DATA_DIR / "HSV-stage-detection.csv"
+)
+
+print("\n--- HSV stage detection ---")
+print(stage_data.to_string(index=False))
+
+
+# -----------------------------
+# Calculate not-detected %
+# -----------------------------
+
+stage_data["Not_Detected_Percent"] = (
+    100 - stage_data["Detected_Percent"]
+)
+
+print("\n--- Detection vs non-detection ---")
+print(
+    stage_data[
+        [
+            "Stage",
+            "Detected_Percent",
+            "Not_Detected_Percent",
+            "Study",
+            "Method"
+        ]
+    ].to_string(index=False)
+)
+
+
+# -----------------------------
+# HSV-003: drop from vesicle
+# to ulcer + soft crust
+# -----------------------------
+
+vesicle_detection = float(
+    stage_data.loc[
+        stage_data["Stage"] == "Vesicle",
+        "Detected_Percent"
+    ].iloc[0]
+)
+
+ulcer_crust_detection = float(
+    stage_data.loc[
+        stage_data["Stage"] == "Ulcer + soft crust",
+        "Detected_Percent"
+    ].iloc[0]
+)
+
+absolute_drop = (
+    vesicle_detection - ulcer_crust_detection
+)
+
+relative_drop = (
+    absolute_drop / vesicle_detection
+) * 100
+
+print("\n--- HSV-003 stage comparison ---")
+print(
+    "Vesicle detection:",
+    vesicle_detection,
+    "%"
+)
+
+print(
+    "Ulcer + soft crust detection:",
+    ulcer_crust_detection,
+    "%"
+)
+
+print(
+    "Absolute decrease:",
+    absolute_drop,
+    "percentage points"
+)
+
+print(
+    "Relative decrease:",
+    round(relative_drop, 2),
+    "%"
+)
 # -----------------------------
 # Final summary
 # -----------------------------
