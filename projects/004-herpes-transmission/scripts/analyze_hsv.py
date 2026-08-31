@@ -68,9 +68,19 @@ hsv005 = pd.read_csv(
 print("\n--- HSV-005 ---")
 print(hsv005.to_string(index=False))
 
+# -----------------------------
+# Load HSV-006
+# -----------------------------
+
+hsv006 = pd.read_csv(
+    DATA_DIR / "HSV-006.csv"
+)
+
+print("\n--- HSV-006 ---")
+print(hsv006.to_string(index=False))
 
 # ============================================================
-# Simple calculations
+# Calculations
 # ============================================================
 
 # -----------------------------
@@ -87,6 +97,42 @@ virus_positive = float(
 
 print("\n--- HSV-003 values ---")
 print("Virus-positive lesions:", virus_positive, "%")
+
+
+# -----------------------------
+# HSV-003
+# Relative viral titre
+# -----------------------------
+
+# Reported mean titres from HSV-003
+# Maximum reported lesion-swab titre = 10^5 PFU
+# Prodromal/erythema titre = <10^1 PFU
+# Vesicle titre = 10^4.7 PFU
+
+max_titre = 10**5
+prodrome_titre_upper = 10**1
+vesicle_titre = 10**4.7
+
+# Calculate relative titre compared with the maximum reported titre
+prodrome_relative = (prodrome_titre_upper / max_titre) * 100
+vesicle_relative = (vesicle_titre / max_titre) * 100
+
+print("\n--- HSV-003 relative viral titre ---")
+print(
+    "Prodrome/erythema: <",
+    round(prodrome_relative, 4),
+    "% of maximum reported titre"
+)
+print(
+    "Vesicle:",
+    round(vesicle_relative, 2),
+    "% of maximum reported titre"
+)
+print(
+    "Maximum reported titre:",
+    100,
+    "% of maximum reported titre"
+)
 
 
 # -----------------------------
@@ -138,6 +184,29 @@ asymptomatic = hsv005.loc[
 print("\n--- HSV-005 values ---")
 print("Asymptomatic shedding:", asymptomatic)
 
+# -----------------------------
+# HSV-006
+# Detectable HSV-1
+# -----------------------------
+
+detectable_episode = float(
+    hsv006.loc[
+        hsv006["Variable"] == "HSV-1 detectable during episode",
+        "Value"
+    ].iloc[0]
+)
+
+vesicle_ulcer_shedding = float(
+    hsv006.loc[
+        hsv006["Variable"] == "Shedding during vesicle/ulcer stage",
+        "Value"
+    ].iloc[0]
+)
+
+print("\n--- HSV-006 values ---")
+print("HSV-1 detectable during episode:", detectable_episode, "%")
+print("Vesicle/ulcer shedding:", vesicle_ulcer_shedding, "%")
+
 
 # -----------------------------
 # Final summary
@@ -152,3 +221,8 @@ print("HSV-004 PCR shedding:", pcr_shedding, "hours")
 print("HSV-004 culture shedding:", culture_shedding, "hours")
 print("HSV-004 difference:", difference, "hours")
 print("HSV-005 asymptomatic shedding:", asymptomatic)
+print("HSV-006 detectable during episode:", detectable_episode, "%")
+print("HSV-006 vesicle/ulcer shedding:", vesicle_ulcer_shedding, "%")
+print("HSV-003 prodrome/erythema relative titre: <", round(prodrome_relative, 4), "%")
+print("HSV-003 vesicle relative titre:", round(vesicle_relative, 2), "%")
+print("HSV-003 maximum reported titre: 100.0 %")
