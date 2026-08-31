@@ -1,0 +1,9 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-002,Condition,Herpes labialis,,HSV-1 infection of the oral/perioral region
+HLT-HSV-002,Lesion stage,Prodrome,,Initial stage
+HLT-HSV-002,Lesion stage,Vesicle,,Fluid-filled lesion stage
+HLT-HSV-002,Lesion stage,Ulcer,,Ulceration after vesicle rupture
+HLT-HSV-002,Lesion stage,Crust,,Crusting during healing
+HLT-HSV-002,Lesion stage,Healing,,Final stage of lesion resolution
+HLT-HSV-002,Viral shedding,Symptomatic shedding,,Virus can be shed during clinical lesions
+HLT-HSV-002,Viral shedding,Asymptomatic shedding,,HSV-1 can also be shed without visible lesions

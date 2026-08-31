@@ -1,0 +1,5 @@
+ID,Study,Sample size,Measurement,Value,Unit,Lesion stage,Time point,Method,Note
+HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,100000,PFU,All lesions,First 24 hours,Lesion swab,Maximum mean titre reported
+HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus-positive lesions,89,%,All lesions,First 24 hours,Lesion swab,Maximum percentage reported
+HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,<10,PFU,Prodromal/erythema,Not specified,Punch biopsy,Reported titre
+HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,10^4.7,PFU,Vesicle,Not specified,Punch biopsy,Reported titre

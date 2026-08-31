@@ -1,0 +1,9 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-005,Subjects,8,adults,Immunocompetent adults with recurrent herpes labialis
+HLT-HSV-005,HSV type,HSV-1,,Study investigated HSV-1
+HLT-HSV-005,Sampling site,Tears,,HSV-1 shedding investigated
+HLT-HSV-005,Sampling site,Nasal mucosa,,HSV-1 shedding investigated
+HLT-HSV-005,Sampling site,Oral mucosa,,HSV-1 shedding investigated
+HLT-HSV-005,Asymptomatic shedding,Yes,,Study investigated shedding without active lesions
+HLT-HSV-005,Method,PCR,,HSV-1 DNA detection
+HLT-HSV-005,Method,Viral culture,,HSV-1 detection

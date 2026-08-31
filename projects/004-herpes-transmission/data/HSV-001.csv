@@ -1,0 +1,5 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-001,HSV type,HSV-1,,Causes oral herpes
+HLT-HSV-001,Transmission,Direct contact,,Transmission through contact with lesions or infected areas
+HLT-HSV-001,Asymptomatic transmission,Yes,,HSV can be transmitted when no visible symptoms are present
+HLT-HSV-001,Lesion healing,Crusting,,Cold sores can develop crusting during healing

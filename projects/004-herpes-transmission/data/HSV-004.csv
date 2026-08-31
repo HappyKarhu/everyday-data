@@ -1,0 +1,9 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-004,Subjects,22,subjects,Subjects monitored during recurrent herpes labialis
+HLT-HSV-004,Sampling frequency,Daily,swabs,Daily swabs during recurrence
+HLT-HSV-004,HSV-1 shedding duration by PCR,60,hours,Median duration
+HLT-HSV-004,HSV-1 shedding duration by culture,48,hours,Median duration
+HLT-HSV-004,Peak viral DNA load,123.6,copies/cell,Peak occurred at 48 hours
+HLT-HSV-004,Peak viral DNA load time,48,hours,After symptom onset
+HLT-HSV-004,HSV detection after symptom onset,96,hours,No virus detected beyond 96 hours
+HLT-HSV-004,HSV-2 DNA detected,No,,No HSV-2 DNA detected in the study
