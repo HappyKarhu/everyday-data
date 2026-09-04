@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/everyday-data/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Truth About Herpes Simplex?</title>
+				<link>http://localhost:1313/everyday-data/research/herpes-crust/</link>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/research/herpes-crust/</guid>
+				<description>A review of published research on HSV detection during different stages of a cold sore.</description>
+			</item>
 			<item>
 				<title>Should You Shut Down Your Laptop? The Electricity Behind Sleep Mode</title>
 				<link>http://localhost:1313/everyday-data/research/laptop-sleep-mode/</link>
