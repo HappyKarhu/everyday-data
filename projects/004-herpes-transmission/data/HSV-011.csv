@@ -1,0 +1,9 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-011,Study type,Review,,Peer-reviewed review of the natural history of herpes simplex labialis
+HLT-HSV-011,Topic,Herpes simplex labialis,,Natural history of recurrent herpes labialis
+HLT-HSV-011,HSV type,HSV-1,,Herpes simplex labialis is primarily associated with HSV-1
+HLT-HSV-011,Subject area,Natural history,,Review of recurrent herpes labialis and clinical course
+HLT-HSV-011,Variables,Lesion duration,days,Review includes duration of herpes labialis lesions
+HLT-HSV-011,Variables,Recurrence,recurrences,Review includes recurrent infection
+HLT-HSV-011,Variables,Complications,observations,Review includes complications associated with herpes labialis
+HLT-HSV-011,Method,Literature review,,Review article rather than a prospective primary clinical study

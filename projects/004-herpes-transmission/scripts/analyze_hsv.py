@@ -79,6 +79,64 @@ hsv006 = pd.read_csv(
 print("\n--- HSV-006 ---")
 print(hsv006.to_string(index=False))
 
+# -----------------------------
+# Load HSV-007
+# -----------------------------
+
+hsv007 = pd.read_csv(
+    DATA_DIR / "HSV-007.csv"
+)
+
+print("\n--- HSV-007 ---")
+print(hsv007.to_string(index=False))
+
+# -----------------------------
+# Load HSV-008
+# -----------------------------
+
+hsv008 = pd.read_csv(
+    DATA_DIR / "HSV-008.csv"
+)
+
+print("\n--- HSV-008 ---")
+print(hsv008.to_string(index=False))
+
+# -----------------------------
+# Load HSV-009
+# -----------------------------
+
+hsv009 = pd.read_csv(
+    DATA_DIR / "HSV-009.csv"
+)
+
+print("\n--- HSV-009 ---")
+print(hsv009.to_string(index=False))
+
+
+# -----------------------------
+# Load HSV-010
+# -----------------------------
+
+hsv010 = pd.read_csv(
+    DATA_DIR / "HSV-010.csv"
+)
+
+print("\n--- HSV-010 ---")
+print(hsv010.to_string(index=False))
+
+
+# -----------------------------
+# Load HSV-011
+# -----------------------------
+
+hsv011 = pd.read_csv(
+    DATA_DIR / "HSV-011.csv"
+)
+
+print("\n--- HSV-011 ---")
+print(hsv011.to_string(index=False))
+
+
 # ============================================================
 # Calculations
 # ============================================================
@@ -90,13 +148,13 @@ print(hsv006.to_string(index=False))
 
 virus_positive = float(
     hsv003.loc[
-        hsv003["Measurement"] == "Virus-positive lesions",
+        hsv003["Variable"] == "Maximum virus-positive lesions",
         "Value"
     ].iloc[0]
 )
 
 print("\n--- HSV-003 values ---")
-print("Virus-positive lesions:", virus_positive, "%")
+print("Maximum virus-positive lesions:", virus_positive, "%")
 
 
 # -----------------------------
@@ -119,15 +177,18 @@ vesicle_relative = (vesicle_titre / max_titre) * 100
 
 print("\n--- HSV-003 relative viral titre ---")
 print(
-    "Prodrome/erythema: <",
+    "Prodrome/erythema:",
+    "<",
     round(prodrome_relative, 4),
     "% of maximum reported titre"
 )
+
 print(
     "Vesicle:",
     round(vesicle_relative, 2),
     "% of maximum reported titre"
 )
+
 print(
     "Maximum reported titre:",
     100,
@@ -207,94 +268,179 @@ print("\n--- HSV-006 values ---")
 print("HSV-1 detectable during episode:", detectable_episode, "%")
 print("Vesicle/ulcer shedding:", vesicle_ulcer_shedding, "%")
 
+# -----------------------------
+# HSV-007
+# Virus-positive lesions
+# -----------------------------
+
+hsv007_positive = float(
+    hsv007.loc[
+        hsv007["Variable"] == "HSV isolated",
+        "Value"
+    ].iloc[0]
+)
+
+print("\n--- HSV-007 values ---")
+print("HSV isolated:", hsv007_positive, "%")
+
+
+# -----------------------------
+# HSV-008
+# Mean vesicle healing time
+# -----------------------------
+
+hsv008_healing = float(
+    hsv008.loc[
+        hsv008["Variable"] == "Mean vesicle healing time",
+        "Value"
+    ].iloc[0]
+)
+
+print("\n--- HSV-008 values ---")
+print("Mean vesicle healing time:", hsv008_healing, "days")
+
+
+# -----------------------------
+# HSV-009
+# HSV-positive specimens
+# -----------------------------
+
+hsv009_positive = float(
+    hsv009.loc[
+        hsv009["Variable"] == "HSV-positive specimens",
+        "Value"
+    ].iloc[0]
+)
+
+hsv009_positive_percent = float(
+    hsv009.loc[
+        hsv009["Variable"] == "HSV-positive specimens",
+        "Unit"
+    ].iloc[0]
+) if False else float(
+    hsv009.loc[
+        hsv009["Variable"] == "HSV-positive specimens",
+        "Note"
+    ].iloc[0]
+) if False else float(
+    hsv009.loc[
+        hsv009["Variable"] == "HSV-positive specimens",
+        "Value"
+    ].iloc[0]
+) / 637 * 100
+
+print("\n--- HSV-009 values ---")
+print("HSV-positive specimens:", hsv009_positive)
+print(
+    "HSV-positive specimens calculated:",
+    round(hsv009_positive_percent, 2),
+    "%"
+)
+
 # ============================================================
-# Stage Detection Calculations
+# HSV-003
+# Lesion stage detection
 # ============================================================
 
 stage_data = pd.read_csv(
     DATA_DIR / "HSV-stage-detection.csv"
 )
 
-print("\n--- HSV stage detection ---")
-print(stage_data.to_string(index=False))
+hsv003_stages = stage_data[
+    stage_data["Study"] == "HSV-003"
+].copy()
 
-
-# -----------------------------
-# Calculate not-detected %
-# -----------------------------
-
-stage_data["Not_Detected_Percent"] = (
-    100 - stage_data["Detected_Percent"]
-)
-
-print("\n--- Detection vs non-detection ---")
+print("\n--- HSV-003 lesion stages ---")
 print(
-    stage_data[
-        [
-            "Stage",
-            "Detected_Percent",
-            "Not_Detected_Percent",
-            "Study",
-            "Method"
-        ]
+    hsv003_stages[
+        ["Stage", "Detected_Percent", "Sample_Size", "Method"]
     ].to_string(index=False)
 )
 
+print("\n--- HSV-003 stage calculations ---")
 
-# -----------------------------
-# HSV-003: drop from vesicle
-# to ulcer + soft crust
-# -----------------------------
+for _, row in hsv003_stages.iterrows():
+    detected = float(row["Detected_Percent"])
+    not_detected = 100 - detected
+
+    print(
+        row["Stage"],
+        ":",
+        detected,
+        "% detected |",
+        not_detected,
+        "% not detected"
+    )
+
+
+# ============================================================
+# Fresh lesion vs crust
+# ============================================================
+
+fresh_detection = float(
+    hsv003_stages.loc[
+        hsv003_stages["Stage"] == "First 24 hours",
+        "Detected_Percent"
+    ].iloc[0]
+)
 
 vesicle_detection = float(
-    stage_data.loc[
-        stage_data["Stage"] == "Vesicle",
+    hsv003_stages.loc[
+        hsv003_stages["Stage"] == "Vesicle",
         "Detected_Percent"
     ].iloc[0]
 )
 
-ulcer_crust_detection = float(
-    stage_data.loc[
-        stage_data["Stage"] == "Ulcer + soft crust",
+crust_detection = float(
+    hsv003_stages.loc[
+        hsv003_stages["Stage"] == "Ulcer + soft crust",
         "Detected_Percent"
     ].iloc[0]
 )
 
-absolute_drop = (
-    vesicle_detection - ulcer_crust_detection
-)
-
-relative_drop = (
-    absolute_drop / vesicle_detection
+fresh_to_crust_drop = fresh_detection - crust_detection
+fresh_to_crust_relative_drop = (
+    fresh_to_crust_drop / fresh_detection
 ) * 100
 
-print("\n--- HSV-003 stage comparison ---")
-print(
-    "Vesicle detection:",
-    vesicle_detection,
-    "%"
-)
+vesicle_to_crust_drop = vesicle_detection - crust_detection
+vesicle_to_crust_relative_drop = (
+    vesicle_to_crust_drop / vesicle_detection
+) * 100
+
+print("\n--- Fresh lesion vs crust ---")
+print("First 24 hours:", fresh_detection, "%")
+print("Vesicle:", vesicle_detection, "%")
+print("Ulcer + soft crust:", crust_detection, "%")
 
 print(
-    "Ulcer + soft crust detection:",
-    ulcer_crust_detection,
-    "%"
-)
-
-print(
-    "Absolute decrease:",
-    absolute_drop,
+    "Fresh lesion to crust decrease:",
+    fresh_to_crust_drop,
     "percentage points"
 )
 
 print(
-    "Relative decrease:",
-    round(relative_drop, 2),
+    "Fresh lesion to crust relative decrease:",
+    round(fresh_to_crust_relative_drop, 2),
     "%"
 )
-# -----------------------------
+
+print(
+    "Vesicle to crust decrease:",
+    vesicle_to_crust_drop,
+    "percentage points"
+)
+
+print(
+    "Vesicle to crust relative decrease:",
+    round(vesicle_to_crust_relative_drop, 2),
+    "%"
+)
+
+
+# ============================================================
 # Final summary
-# -----------------------------
+# ============================================================
 
 print("\n==============================")
 print("HSV RESEARCH SUMMARY")
@@ -307,6 +453,22 @@ print("HSV-004 difference:", difference, "hours")
 print("HSV-005 asymptomatic shedding:", asymptomatic)
 print("HSV-006 detectable during episode:", detectable_episode, "%")
 print("HSV-006 vesicle/ulcer shedding:", vesicle_ulcer_shedding, "%")
-print("HSV-003 prodrome/erythema relative titre: <", round(prodrome_relative, 4), "%")
-print("HSV-003 vesicle relative titre:", round(vesicle_relative, 2), "%")
+print("HSV-007 HSV isolated:", hsv007_positive, "%")
+print("HSV-008 mean vesicle healing time:", hsv008_healing, "days")
+print("HSV-009 HSV-positive specimens:", hsv009_positive)
+print(
+    "HSV-009 HSV-positive specimens calculated:",
+    round(hsv009_positive_percent, 2),
+    "%"
+)
+print(
+    "HSV-003 prodrome/erythema relative titre: <",
+    round(prodrome_relative, 4),
+    "%"
+)
+print(
+    "HSV-003 vesicle relative titre:",
+    round(vesicle_relative, 2),
+    "%"
+)
 print("HSV-003 maximum reported titre: 100.0 %")

@@ -1,0 +1,11 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-007,Subjects,41,adults,Ambulatory patients with recurrent facial-oral herpes
+HLT-HSV-007,Episodes studied,57,episodes,Facial-oral HSV episodes
+HLT-HSV-007,HSV type,HSV-1,,All isolated HSV was type 1
+HLT-HSV-007,HSV isolated,61,%,Episodes in which HSV was isolated by daily culture
+HLT-HSV-007,Clinical examination,Within 24 hours,after symptom onset,Patients examined within 24 hours of symptom onset
+HLT-HSV-007,Follow-up,5,days,Patients examined for five consecutive days
+HLT-HSV-007,Sampling frequency,Daily,sampling,Daily virus cultures were performed
+HLT-HSV-007,Method,Viral culture,,Daily cultures used to detect HSV
+HLT-HSV-007,Virus-positive lesions,Larger,lesion size,Positive lesions were clinically larger than virus-negative lesions
+HLT-HSV-007,Virus-positive lesions,Slower,healing,Positive lesions healed more slowly than virus-negative lesions

@@ -1,0 +1,10 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-006,Subjects,30,adults,Adults with recurrent herpes labialis
+HLT-HSV-006,HSV type,HSV-1,,Study investigated recurrent herpes labialis
+HLT-HSV-006,HSV-1 detectable during episode,87,%,Participants with detectable HSV-1 during the recurrence
+HLT-HSV-006,Shedding during vesicle/ulcer stage,91,%,Participants with detectable shedding during the combined vesicle and ulcer stage
+HLT-HSV-006,Clinical stage shedding,50,%,Shedding reported during clinical stages
+HLT-HSV-006,Subclinical stage shedding,23,%,Shedding reported during subclinical stages
+HLT-HSV-006,Mean shedding duration,4,days,Mean duration of detectable HSV-1
+HLT-HSV-006,Sampling frequency,Every 12 hours,sampling,Swabs collected from prodrome for 10 days
+HLT-HSV-006,Method,PCR,,HSV-1 DNA detection

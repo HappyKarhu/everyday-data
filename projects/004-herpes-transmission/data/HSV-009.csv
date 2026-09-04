@@ -1,0 +1,13 @@
+ID,Variable,Value,Unit,Note
+LT-HSV-009,Subjects,8,adults,Human subjects with a history of herpes labialis
+HLT-HSV-009,HSV type,HSV-1,,Each patient excreted one HSV-1 strain
+HLT-HSV-009,Specimens collected,637,specimens,Serial intraoral specimens collected by gargling broth
+HLT-HSV-009,HSV-positive specimens,47,specimens,Specimens containing HSV
+HLT-HSV-009,HSV-positive specimens,7.4,%,47 of 637 specimens contained HSV
+HLT-HSV-009,Isolates in clusters,62,%,Majority of HSV isolates occurred in clusters
+HLT-HSV-009,Excretion during common cold,21,%,Rate of oral HSV excretion during common cold
+HLT-HSV-009,Excretion after oral trauma,17,%,Rate of oral HSV excretion after oral trauma
+HLT-HSV-009,False prodrome with oral HSV excretion,60,%,False prodromes were associated with a high rate of oral HSV excretion
+HLT-HSV-009,Intraoral ulcers with oral HSV excretion,31,%,Intraoral gingival or hard-palate ulcers frequently associated with oral HSV excretion
+HLT-HSV-009,Sampling method,Gargled broth,sampling,Serial intraoral specimens obtained by gargling broth
+HLT-HSV-009,Detection method,Viral culture,,Centrifugal inoculation of primary human amnion cells

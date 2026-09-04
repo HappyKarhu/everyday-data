@@ -1,0 +1,11 @@
+ID,Variable,Value,Unit,Note
+HLT-HSV-008,Subjects,84,persons,Persons with frequent recurrent herpes simplex labialis
+HLT-HSV-008,Age range,6-71,years,Age range of participants
+HLT-HSV-008,Study period,6,months,Recurrences were prospectively followed over six months
+HLT-HSV-008,Mean outbreaks,2.7,outbreaks/6 months,Mean number of HSL outbreaks
+HLT-HSV-008,Standard error,0.3,outbreaks/6 months,Standard error of mean outbreaks
+HLT-HSV-008,Outbreaks with healing data,214,outbreaks,Outbreaks used to calculate vesicle healing time
+HLT-HSV-008,Mean vesicle healing time,6.4,days,Mean ± standard error time to vesicle healing
+HLT-HSV-008,Standard error,0.2,days,Standard error of mean healing time
+HLT-HSV-008,HSV type,HSV-1,,Recurrent herpes simplex labialis
+HLT-HSV-008,Method,Prospective clinical observation,,All HSL episodes were prospectively studied

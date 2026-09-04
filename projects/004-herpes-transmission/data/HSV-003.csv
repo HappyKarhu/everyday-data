@@ -1,5 +1,14 @@
-ID,Study,Sample size,Measurement,Value,Unit,Lesion stage,Time point,Method,Note
-HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,100000,PFU,All lesions,First 24 hours,Lesion swab,Maximum mean titre reported
-HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus-positive lesions,89,%,All lesions,First 24 hours,Lesion swab,Maximum percentage reported
-HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,<10,PFU,Prodromal/erythema,Not specified,Punch biopsy,Reported titre
-HSV-003,The natural history of recurrent herpes simplex labialis,80,Virus titre,10^4.7,PFU,Vesicle,Not specified,Punch biopsy,Reported titre
+ID,Variable,Value,Unit,Note
+HLT-HSV-003,Subjects,80,patients,Patients with recurrent herpes simplex labialis examined daily
+HLT-HSV-003,HSV type,HSV-1,,Recurrent herpes simplex labialis
+HLT-HSV-003,Maximum virus-positive lesions,89,%,Frequency of virus-positive lesions was maximal during the first 24 hours
+HLT-HSV-003,Maximum virus-positive period,First 24 hours,time period,Frequency of virus-positive lesions decreased after the first 24 hours
+HLT-HSV-003,Mean virus titre from lesion swabs,10^5,PFU,Mean virus titre from lesion swabs was maximal during the first 24 hours
+HLT-HSV-003,Prodromal/erythema biopsy titre,<10^1,PFU,Mean virus titre from lesion punch biopsies
+HLT-HSV-003,Vesicle biopsy titre,10^4.7,PFU,Mean virus titre from lesion punch biopsies during vesicle stage
+HLT-HSV-003,Lesion virus excretion,Decreased after first 24 hours,time course,Lesion virus excretion decreased after the first 24 hours
+HLT-HSV-003,Time to crust loss,Measured,days,Study identified time to loss of crust as an outcome measure but abstract does not provide the numerical value
+HLT-HSV-003,Time to complete healing,Measured,days,Study identified time to complete healing as an outcome measure but abstract does not provide the numerical value
+HLT-HSV-003,Duration of lesion virus excretion,Measured,days,Study identified duration of lesion virus excretion as an outcome measure but abstract does not provide the numerical value
+HLT-HSV-003,Method,Viral culture,,Virus titres and virus-positive lesions were assessed from lesion samples
+HLT-HSV-003,Study design,Prospective clinical study,,Daily examination of patients with recurrent herpes labialis

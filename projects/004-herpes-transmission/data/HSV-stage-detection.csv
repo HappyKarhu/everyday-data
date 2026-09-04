@@ -1,0 +1,5 @@
+Stage,StageOrder,Detected_Percent,Study,Sample_Size,Method,Note
+First 24 hours,1,89,HSV-003,80,Lesion swab,Virus-positive lesions; all lesions
+Blister,2,80,HSV-003,80,Lesion swab,Virus-positive lesions; blister stage
+Blister + ulcer,3,91,HSV-006,30,PCR,Participants with detectable shedding during combined blister and ulcer stages
+Ulcer + crust,4,34,HSV-003,80,Lesion swab,Virus-positive lesions; ulcer and soft crust
