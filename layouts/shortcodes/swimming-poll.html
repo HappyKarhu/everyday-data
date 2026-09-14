@@ -1,28 +1,28 @@
-<div class="poll laptop-poll" data-poll-id="{{ .Get "id" }}">
+<div class="poll swimming-poll" data-poll-id="{{ .Get "id" }}">
     <h3 class="poll-question">
         {{ .Get "question" }}
     </h3>
 
     <p class="poll-description">
-        For comparison, a 10 W LED bulb can provide general lighting for a room.
+        Before reading the evidence, what do you think?
     </p>
 
     <div class="poll-options">
 
-        <button class="poll-option" data-option="10-or-less">
-        💡 10 hours or less
+        <button class="poll-option" data-option="digestion-cramps">
+            Yes, to give the stomach time to digest food and prevent cramps.
         </button>
 
-        <button class="poll-option" data-option="11-50">
-            💡💡 11–50 hours
+        <button class="poll-option" data-option="blood-flow-cramps">
+            Yes, because eating sends more blood to the stomach and leaves less for the muscles used for swimming.
         </button>
 
-        <button class="poll-option" data-option="51-120">
-            💡💡💡 51–120 hours
+        <button class="poll-option" data-option="tired-drowning">
+            Yes, because swimming after eating could make us tired or weak and increase the risk of drowning.
         </button>
 
-        <button class="poll-option" data-option="more-than-121">
-            💡💡💡💡 More than 121 hours
+        <button class="poll-option" data-option="dont-believe">
+            No, I don't believe we need to wait 30 minutes.
         </button>
 
     </div>
@@ -45,7 +45,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    const poll = document.querySelector(".laptop-poll");
+    const poll = document.querySelector(".swimming-poll");;
     if (!poll) return;
 
     const pollId = poll.dataset.pollId;
@@ -89,10 +89,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const votes = await response.json();
 
         const voteCounts = {
-            "10-or-less": 0,
-            "11-50": 0,
-            "51-120": 0,
-            "more-than-121": 0
+            "digestion-cramps": 0,
+            "blood-flow-cramps": 0,
+            "tired-drowning": 0,
+            "dont-believe": 0
         };
 
         votes.forEach(function (vote) {
@@ -116,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 : 0;
 
             const labels = {
-                "10-or-less": "10 hours or less",
-                "11-50": "11–50 hours",
-                "51-120": "51–120 hours",
-                "more-than-121": "More than 121 hours"
+                "digestion-cramps": "Yes, because eating sends more blood to the stomach and leaves less for the muscles used for swimming.",
+                "blood-flow-cramps": "Yes, because eating sends more blood to the stomach, leaving less for the muscles we need to swim and causing cramps.",
+                "tired-drowning": "Yes, because swimming after eating could make us tired or weak and increase the risk of drowning.",
+                "dont-believe": "No, I don't believe we need to wait 30 minutes."
             };
 
             html += `
