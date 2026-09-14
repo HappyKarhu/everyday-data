@@ -38,6 +38,8 @@ I remember impatiently looking at the clock and asking my mother every few secon
 **"Is it time yet?"**
 Waiting for those 30 minutes to finally pass was a nightmare for me, and probably for my mother too.
 
+{{< figure src="images/childhood.png" title="Stand by mode after eating" >}}
+
 At the time, I never questioned it. That was simply the rule.
 
 Years later, when I was studying nursing in Finland, a teacher asked us:
@@ -59,7 +61,7 @@ But most of us were foreigners, and perhaps we were not very comfortable saying 
 
 During the break, however, we talked about it openly.
 
-Mostvof us still believed what our parents had told us.
+Most of us still believed what our parents had told us.
 
 The rule had been passed down from one generation to the next, and it was difficult to simply stop believing it because a teacher said it wasn't true.
 
@@ -115,11 +117,13 @@ The important question was simple:
 
 **Does waiting longer after eating make you swim faster?**
 
-The results did not provide evidence for a clear performance disadvantage from eating before swimming. :contentReference[oaicite:2]{index=2}
+The results did not provide evidence for a clear performance disadvantage from eating before swimming.
 
 But there is a limitation here: the PubMed record for this older 1963 study does not provide an abstract, so I don't want to claim more about its exact participants or results than the available record supports.
 
 That is why the second study is particularly interesting.
+
+{{< figure src="images/picnic.jpg" title="Beach picnic - the best memories" >}}
 
 ## What about a large meal?
 
@@ -136,7 +140,7 @@ The researchers found **no significant difference in swimming performance betwee
 
 There were also **no stomach cramps** reported.
 
-There was one interesting finding, though: nausea occurred most often when the swimmers swam only 30 minutes after the meal. :contentReference[oaicite:3]{index=3}
+There was one interesting finding, though: nausea occurred most often when the swimmers swam only 30 minutes after the meal.
 
 So eating a large meal immediately before swimming may not be the most comfortable choice.
 
@@ -159,7 +163,7 @@ Based on these studies, **there is no evidence that a 30-minute waiting period i
 
 That doesn't mean everyone will feel exactly the same after eating.
 
-A large meal can make you feel full or uncomfortable, and the 1968 study found more nausea in the 30-minute condition. :contentReference[oaicite:4]{index=4}
+A large meal can make you feel full or uncomfortable, and the 1968 study found more nausea in the 30-minute condition.
 
 So if you've just eaten a huge meal and don't feel like swimming, waiting makes sense.
 

@@ -1,7 +1,7 @@
 +++
 title = "Should You Shut Down Your Laptop? The Electricity Behind Sleep Mode"
 date = "2026-08-18"
-draft = false
+draft = true
 card_title = "Should You Shut Down Your Laptop? The Electricity Behind Sleep Mode"
 card_description = "What happens to electricity use when a laptop is left in Sleep mode instead of being shut down?"
 +++
