@@ -10,6 +10,36 @@
 		
 		
 		
+			<lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/everyday-data/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Cold Sore</title>
+				<link>http://localhost:1313/everyday-data/tags/cold-sore/</link>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/tags/cold-sore/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Herpes Simplex</title>
+				<link>http://localhost:1313/everyday-data/tags/herpes-simplex/</link>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/tags/herpes-simplex/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>HSV</title>
+				<link>http://localhost:1313/everyday-data/tags/hsv/</link>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/tags/hsv/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Infectious Diseases</title>
+				<link>http://localhost:1313/everyday-data/tags/infectious-diseases/</link>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/everyday-data/tags/infectious-diseases/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

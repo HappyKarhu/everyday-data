@@ -2,8 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/everyday-data/categories/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/tags/cold-sore/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/everyday-data/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/categories/health/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/tags/herpes-simplex/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/tags/hsv/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/tags/infectious-diseases/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/tags/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/everyday-data/research/herpes-crust/</loc>
+    <lastmod>2026-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/everyday-data/research/laptop-sleep-mode/</loc>
     <lastmod>2026-08-18T00:00:00+00:00</lastmod>
@@ -21,9 +45,5 @@
     <lastmod>2026-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/everyday-data/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/everyday-data/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/everyday-data/tags/</loc>
   </url>
 </urlset>
